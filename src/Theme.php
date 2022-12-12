@@ -14,6 +14,6 @@ class Theme
     public function __construct()
     {
         $theme = file_get_contents(SITE_URL . "/theme/theme.json");
-        var_dump(json_decode($theme, true));
+        return json_decode($theme, true);
     }
 }
