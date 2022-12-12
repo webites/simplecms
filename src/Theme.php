@@ -14,6 +14,6 @@ class Theme
     public function __construct()
     {
         $theme = fopen(SITE_URL . "/theme/theme.json", "r") or die("Unable to open file!");
-        var_dump(json_encode($theme));
+        var_dump(json_decode($theme, true));
     }
 }
