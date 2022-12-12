@@ -1,0 +1,23 @@
+{
+  "name": "admin_front",
+  "version": "1.1.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "sass sass/base.scss css/style.css",
+    "prod": "sass sass/base.scss css/style.min.css --style=compressed",
+    "watch": "sass sass/base.scss css/style.css --watch",
+    "dev-log": "sass sass/panel/base.scss css/style-login.css",
+    "prod-log": "sass sass/panel/base.scss css/style-login.min.css --style=compressed",
+    "watch-log": "sass sass/panel/base.scss css/style-login.css --watch",
+    "bootstrap": "sass node_modules/bootstrap/scss/bootstrap.scss css/bootstrap.min.css --style=compressed"
+  },
+  "author": "weBites",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.2"
+  }
+}
