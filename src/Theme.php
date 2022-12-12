@@ -13,8 +13,7 @@ class Theme
 
     public function __construct()
     {
-        $theme_file = fopen(SITE_URL . "/theme/theme.json", "r") or die("Unable to open file!");
-        $theme = fread($theme_file, filesize($theme_file));
+        $theme = file_get_contents(SITE_URL . "/theme/theme.json");
         var_dump(json_decode($theme, true));
     }
 }
