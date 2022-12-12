@@ -1,4 +1,4 @@
-<?php require __DIR__ . '/vendor/autoload.php';
+<?php require '/vendor/autoload.php';
 header("Location: routes.php");
 
 /* Silence is golden */
