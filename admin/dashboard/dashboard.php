@@ -95,9 +95,32 @@ $sign = substr($username, 0, 1);
                     </div>
                     </div>
 
-                    <?php
-                    $theme = new Theme();
-                    ?>
+                    <div class="dashboard__info__item">
+                        <?php $theme = new Theme(); ?>
+                        <h3>Theme</h3>
+                        <ul>
+                            <?php
+                            if ($theme['name']) {
+                                echo "<li>" . $theme['name'] . "</li>";
+                            }
+                            if ($theme['description']) {
+                                echo "<li>" . $theme['description'] . "</li>";
+                            }
+                            if ($theme['version']) {
+                                echo "<li>" . $theme['version'] . "</li>";
+                            }
+                            if ($theme['author']) {
+                                echo "<li>" . $theme['author'] . "</li>";
+                            }
+
+                            if ($theme['url']) {
+                                echo "<li><a href='" . $theme['name'] . "'> " . $theme['name'] . "</a></li>";
+                            }
+                            ?>
+                        </ul>
+                    </div>
+
+
 
             </div>
         </div>
