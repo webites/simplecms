@@ -98,23 +98,22 @@ $sign = substr($username, 0, 1);
                     <div class="dashboard__info__item">
                         <?php $theme = new Theme(); ?>
                         <h3>Theme</h3>
-                        <?php var_dump($theme) ?>
                         <ul>
                             <?php
-                            if ($theme['name']) {
+                            if ($theme->name) {
                                 echo "<li>" . $theme->name . "</li>";
                             }
-                            if ($theme['description']) {
+                            if ($theme->description) {
                                 echo "<li>" . $theme->description . "</li>";
                             }
-                            if ($theme['version']) {
+                            if ($theme->version) {
                                 echo "<li>" . $theme->version . "</li>";
                             }
-                            if ($theme['author']) {
+                            if ($theme->author) {
                                 echo "<li>" . $theme->author . "</li>";
                             }
 
-                            if ($theme['url']) {
+                            if ($theme->name) {
                                 echo "<li><a href='" . $theme->name . "'> " . $theme->name . "</a></li>";
                             }
                             ?>
