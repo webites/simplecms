@@ -98,6 +98,7 @@ $sign = substr($username, 0, 1);
                     <div class="dashboard__info__item">
                         <?php $theme = new Theme(); ?>
                         <h3>Theme</h3>
+                        <?php var_dump($theme) ?>
                         <ul>
                             <?php
                             if ($theme['name']) {
