@@ -2,6 +2,7 @@
 
 use Simple\Core\Page;
 use Simple\Core\Pages;
+use Simple\Core\Theme;
 
 $sign = substr($username, 0, 1);
 ?>
@@ -93,6 +94,10 @@ $sign = substr($username, 0, 1);
                         </div>
                     </div>
                     </div>
+
+                    <?php
+                    $theme = new Theme();
+                    ?>
 
             </div>
         </div>
