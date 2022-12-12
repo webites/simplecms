@@ -113,8 +113,8 @@ $sign = substr($username, 0, 1);
                                 echo "<li>" . $theme->author . "</li>";
                             }
 
-                            if ($theme->name) {
-                                echo "<li><a href='" . $theme->name . "'> " . $theme->name . "</a></li>";
+                            if ($theme->url) {
+                                echo "<li><a href='" . $theme->url . "'> " . $theme->url . "</a></li>";
                             }
                             ?>
                         </ul>
