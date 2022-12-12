@@ -101,20 +101,20 @@ $sign = substr($username, 0, 1);
                         <ul>
                             <?php
                             if ($theme->name) {
-                                echo "<li>" . $theme->name . "</li>";
+                                echo "<li><h4>Name: " . $theme->name . "</h4></li>";
                             }
                             if ($theme->description) {
-                                echo "<li>" . $theme->description . "</li>";
+                                echo "<li><h4>Description: " . $theme->description . "</h4></li>";
                             }
                             if ($theme->version) {
-                                echo "<li>" . $theme->version . "</li>";
+                                echo "<li><h4>Version: " . $theme->version . "</h4></li>";
                             }
                             if ($theme->author) {
-                                echo "<li>" . $theme->author . "</li>";
+                                echo "<li><h4>Author: " . $theme->author . "</h4></li>";
                             }
 
                             if ($theme->url) {
-                                echo "<li><a href='" . $theme->url . "'> " . $theme->url . "</a></li>";
+                                echo "<li><h4>Url: <a href='" . $theme->url . "'> " . $theme->url . "</a></h4></li>";
                             }
                             ?>
                         </ul>
