@@ -1,0 +1,12 @@
+{
+  "version": 3,
+  "sourceRoot": "",
+  "sources": [
+    "../../res/sass/base.scss",
+    "../../res/sass/_panel.scss",
+    "../../res/sass/_variables.scss"
+  ],
+  "names": [],
+  "mappings": "AAAQ;ACAR;EACE;;;AAGF;EACE,kBCLM;EDMN;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACE;;AAGF;EACE;EACA;;AAEA;EACE;EACA;EACA;EACA;EACA;;AAGF;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAIN;EACE;;AAGF;EACE;EACA;;;ADvDJ;EACE;;;AAEF;EACE;EACA",
+  "file": "style.css"
+}

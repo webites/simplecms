@@ -1,0 +1,23 @@
+{
+  "name": "lukaszgolabek/simplecms",
+  "description": "Simple CMS for simple websites",
+  "type": "project",
+  "autoload": {
+    "psr-4": {
+      "Simple\\Core\\": "src/"
+    },
+    "files": [
+      "config.php"
+    ]
+  },
+  "authors": [
+    {
+      "name": "weBites"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "bramus/router": "dev-master",
+    "delight-im/auth": "dev-master"
+  }
+}
