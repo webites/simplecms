@@ -1,3 +1,4 @@
 <?php require __DIR__ . '/vendor/autoload.php';
-echo "index.";
+header("Location: routes.php");
+
 /* Silence is golden */
