@@ -7,4 +7,4 @@ const DB_HOST = 'localhost:3306';
 const DB_CHARSET = 'utf8mb4_unicode_ci';
 
 
-const SITE_URL = 'https://dev.simplecms.webites.dev';
+const SITE_URL = 'https://simplecms.webites.dev';
