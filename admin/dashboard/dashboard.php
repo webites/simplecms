@@ -93,7 +93,7 @@ $sign = substr($username, 0, 1);
                             <span>Add new menu</span>
                         </div>
                     </div>
-                    </div>
+
 
                     <div class="dashboard__info__item">
                         <?php $theme = new Theme(); ?>
@@ -120,7 +120,7 @@ $sign = substr($username, 0, 1);
                         </ul>
                     </div>
 
-
+                    </div>
 
             </div>
         </div>
