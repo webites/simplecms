@@ -31,6 +31,12 @@ class View
         $hooks = Hooks::getInstance();
 
 
+        $hooks->add_action('simple_header', 'echo_this_in_header');
+
+        function echo_this_in_header()
+        {
+            echo "test";
+        }
 
 
         require_once('theme/header-' . $this->header . '.php');
