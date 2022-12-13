@@ -13,7 +13,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-lg-5">
-                <img src="<?php echo $site->getLogoUrl(); ?>" alt="">
+                <?php $site->theLogo(); ?>
                 <h6><?php echo $site->site_name; ?></h6>
             </div>
             <div class="col-12 col-lg-7">

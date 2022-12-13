@@ -38,4 +38,8 @@ class Site
     {
         return $this->logo;
     }
+
+    public function theLogo(){
+        echo '<img src="'.$this->getLogoUrl().'" alt="'.$this->site_name.'">'
+    }
 }
