@@ -16,7 +16,7 @@ class Site
             $dbh = new PDO("mysql:host=" . DB_HOST . ";dbname=" . DB_DATABASE . ";charset=utf8", DB_USER, DB_PASSWORD);
 
             $data = $dbh->query('SELECT * FROM site_settings');
-            $record = $data->fetch();
+            $record = $data->fetchAll();
             $this->logo = $record['logo'];
             $dbh = null;
         } catch (PDOException $e) {
