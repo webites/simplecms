@@ -2,6 +2,9 @@
 
 namespace Simple\Core;
 
+use PDO;
+use PDOException;
+
 class Site
 {
 
