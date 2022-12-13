@@ -39,7 +39,8 @@ class Site
         return $this->logo;
     }
 
-    public function theLogo(){
-        echo '<img src="'.$this->logo.'" alt="'.$this->site_name.'">'
+    public function theLogo()
+    {
+        echo '<img src="' . $this->logo . '" alt="' . $this->site_name . '">';
     }
 }
