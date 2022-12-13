@@ -28,7 +28,7 @@ class View
     {
         $page = new Page($this->pageId);
         $site = new Site();
-        $hooks = Hooks::getInstance();
+        // $hooks = Hooks::getInstance();
 
 
 
