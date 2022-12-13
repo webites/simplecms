@@ -6,6 +6,7 @@ namespace Simple\Core;
 session_start();
 
 use Simple\Core\Page;
+use Simple\Core\Site;
 
 class View
 {
