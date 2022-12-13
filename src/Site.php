@@ -40,6 +40,6 @@ class Site
     }
 
     public function theLogo(){
-        echo '<img src="'.$this->getLogoUrl().'" alt="'.$this->site_name.'">'
+        echo '<img src="'.$this->logo.'" alt="'.$this->site_name.'">'
     }
 }
