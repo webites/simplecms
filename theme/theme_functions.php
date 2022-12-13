@@ -1,0 +1,11 @@
+<?php
+
+use voku\helper\Hooks;
+
+$hooks = Hooks::getInstance();
+$hooks->add_action('simple_header', 'echo_this_in_header');
+
+function echo_this_in_header($page)
+{
+    echo $page['title'];
+}
