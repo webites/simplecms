@@ -18,6 +18,7 @@
   "minimum-stability": "dev",
   "require": {
     "bramus/router": "dev-master",
-    "delight-im/auth": "dev-master"
+    "delight-im/auth": "dev-master",
+    "voku/php-hooks": "dev-master"
   }
 }

@@ -11,6 +11,10 @@ class ComposerStaticInit674be5e104d6f55d25ba3e4b9f199723
     );
 
     public static $prefixLengthsPsr4 = array (
+        'v' => 
+        array (
+            'voku\\helper\\' => 12,
+        ),
         'S' => 
         array (
             'Simple\\Core\\' => 12,
@@ -26,6 +30,10 @@ class ComposerStaticInit674be5e104d6f55d25ba3e4b9f199723
     );
 
     public static $prefixDirsPsr4 = array (
+        'voku\\helper\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/voku/php-hooks/src/voku/helper',
+        ),
         'Simple\\Core\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
