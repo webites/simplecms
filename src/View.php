@@ -36,7 +36,7 @@ class View
         require_once('theme/header-' . $this->header . '.php');
         require_once('theme/page-' . $this->template . '.php');
         require_once('theme/footer-' . $this->footer . '.php');
-        $hooks->add_action('simple_header', 'echo_this_in_header');
+        // $hooks->add_action('simple_header', 'echo_this_in_header');
 
         function echo_this_in_header()
         {
