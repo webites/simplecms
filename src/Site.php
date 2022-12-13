@@ -16,7 +16,7 @@ class Site
         try {
             $dbh = new PDO("mysql:host=" . DB_HOST . ";dbname=" . DB_DATABASE . ";charset=utf8", DB_USER, DB_PASSWORD);
 
-            $data = $dbh->query('SELECT * FROM site_settings');
+            $data = $dbh->query('SELECT name, value FROM site_settings');
             $records = $data->fetchAll();
             foreach ($records as $record) {
                 if ($record['name'] == 'logo') {
