@@ -7,6 +7,7 @@ session_start();
 
 use Simple\Core\Page;
 use Simple\Core\Site;
+use voku\helper\Hooks;
 
 class View
 {
@@ -27,6 +28,15 @@ class View
     {
         $page = new Page($this->pageId);
         $site = new Site();
+        $hooks = Hooks::getInstance();
+
+        $hooks->add_action('simple_header', 'echo_this_in_header');
+
+        function echo_this_in_header($page)
+        {
+            echo $page->title;
+        }
+
         require_once('theme/header-' . $this->header . '.php');
         require_once('theme/page-' . $this->template . '.php');
         require_once('theme/footer-' . $this->footer . '.php');

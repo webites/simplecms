@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,300;0,500;0,900;1,100;1,300;1,500;1,900&display=swap");
+:root {
+  --gray-50: #f2f2f3;
+  --gray-100: #e4e6e7;
+  --gray-200: #caccce;
+  --gray-300: #afb3b6;
+  --gray-400: #95999d;
+  --gray-500: #7a8085;
+  --gray-600: #62666a;
+  --gray-700: #494d50;
+  --gray-800: #313335;
+  --gray-900: #181a1b;
+  --blue-50: #e5f5ff;
+  --blue-100: #ccebff;
+  --blue-200: #99d6ff;
+  --blue-300: #66c2ff;
+  --blue-400: #33aeff;
+  --blue-500: #0099ff;
+  --blue-600: #007bcc;
+  --blue-700: #005c99;
+  --blue-800: #003d66;
+  --blue-900: #001f33;
+  --indigo-50: #e5e8ff;
+  --indigo-100: #ccd1ff;
+  --indigo-200: #99a3ff;
+  --indigo-300: #6675ff;
+  --indigo-400: #3347ff;
+  --indigo-500: #0019ff;
+  --indigo-600: #0014cc;
+  --indigo-700: #000f99;
+  --indigo-800: #000a66;
+  --indigo-900: #000533;
+  --violet-50: #f0e5ff;
+  --violet-100: #e0ccff;
+  --violet-200: #c299ff;
+  --violet-300: #a366ff;
+  --violet-400: #8433ff;
+  --violet-500: #6600ff;
+  --violet-600: #5100cc;
+  --violet-700: #3d0099;
+  --violet-800: #290066;
+  --violet-900: #140033;
+  --purple-50: #fce5ff;
+  --purple-100: #faccff;
+  --purple-200: #f599ff;
+  --purple-300: #f066ff;
+  --purple-400: #eb33ff;
+  --purple-500: #e600ff;
+  --purple-600: #b800cc;
+  --purple-700: #8a0099;
+  --purple-800: #5c0066;
+  --purple-900: #2e0033;
+  --pink-50: #ffe5f5;
+  --pink-100: #ffcceb;
+  --pink-200: #ff99d6;
+  --pink-300: #ff66c2;
+  --pink-400: #ff33ae;
+  --pink-500: #ff0099;
+  --pink-600: #cc007b;
+  --pink-700: #99005c;
+  --pink-800: #66003d;
+  --pink-900: #33001f;
+  --red-50: #ffe5e8;
+  --red-100: #ffccd1;
+  --red-200: #ff99a3;
+  --red-300: #ff6675;
+  --red-400: #ff3347;
+  --red-500: #ff0019;
+  --red-600: #cc0014;
+  --red-700: #99000f;
+  --red-800: #66000a;
+  --red-900: #330005;
+  --orange-50: #fff0e5;
+  --orange-100: #ffe0cc;
+  --orange-200: #ffc299;
+  --orange-300: #ffa366;
+  --orange-400: #ff8433;
+  --orange-500: #ff6600;
+  --orange-600: #cc5100;
+  --orange-700: #993d00;
+  --orange-800: #662900;
+  --orange-900: #331400;
+  --yellow-50: #fffce5;
+  --yellow-100: #fffacc;
+  --yellow-200: #fff599;
+  --yellow-300: #fff066;
+  --yellow-400: #ffeb33;
+  --yellow-500: #ffe600;
+  --yellow-600: #ccb800;
+  --yellow-700: #998a00;
+  --yellow-800: #665c00;
+  --yellow-900: #332e00;
+  --lime-50: #f5ffe5;
+  --lime-100: #ebffcc;
+  --lime-200: #d6ff99;
+  --lime-300: #c2ff66;
+  --lime-400: #aeff33;
+  --lime-500: #99ff00;
+  --lime-600: #7bcc00;
+  --lime-700: #5c9900;
+  --lime-800: #3d6600;
+  --lime-900: #1f3300;
+  --green-50: #e8ffe5;
+  --green-100: #d1ffcc;
+  --green-200: #a3ff99;
+  --green-300: #75ff66;
+  --green-400: #47ff33;
+  --green-500: #19ff00;
+  --green-600: #14cc00;
+  --green-700: #0f9900;
+  --green-800: #0a6600;
+  --green-900: #053300;
+  --teal-50: #e5fff0;
+  --teal-100: #ccffe0;
+  --teal-200: #99ffc2;
+  --teal-300: #66ffa3;
+  --teal-400: #33ff84;
+  --teal-500: #00ff66;
+  --teal-600: #00cc51;
+  --teal-700: #00993d;
+  --teal-800: #006629;
+  --teal-900: #003314;
+  --cyan-50: #e5fffc;
+  --cyan-100: #ccfffa;
+  --cyan-200: #99fff5;
+  --cyan-300: #66fff0;
+  --cyan-400: #33ffeb;
+  --cyan-500: #00ffe6;
+  --cyan-600: #00ccb8;
+  --cyan-700: #00998a;
+  --cyan-800: #00665c;
+  --cyan-900: #00332e;
+}
+
+a {
+  color: currentColor;
+}
+a:hover {
+  color: var(--gray-600);
+}
+
+h1 {
+  font-size: 6rem;
+  line-height: 7rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 4.8rem;
+  line-height: 5.2rem;
+  font-weight: 600;
+}
+
+h3,
+h4,
+h5,
+h6 {
+  font-size: 2.2rem;
+  line-height: 2.8rem;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 2.8rem;
+  font-weight: 500;
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.2rem 4.2rem;
+  font-size: 1.6rem;
+  border-radius: 0;
+}
+.btn__primary {
+  background-color: var(--blue-600);
+  color: var(--gray-50);
+}
+.btn__primary:hover {
+  background-color: var(--blue-500);
+}
+
+.topbar__menu ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+.topbar__menu ul a {
+  padding: 1.2rem 2.6rem;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+.topbar__menu ul a:hover {
+  border-bottom: 1px solid var(--gray-200);
+}
+.topbar__menu ul li {
+  position: relative;
+}
+.topbar__menu ul li ul {
+  position: absolute;
+  top: 3.4rem;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease-in;
+  border: 1px solid var(--gray-200);
+  width: 100%;
+  z-index: 10;
+  display: block;
+}
+.topbar__menu ul li ul li {
+  padding: 1rem 0;
+}
+.topbar__menu ul li ul a {
+  padding: 0;
+  margin: 2rem 0;
+}
+.topbar__menu ul li ul a:hover {
+  border-bottom: none;
+}
+.topbar__menu ul li:hover ul {
+  opacity: 1;
+  visibility: visible;
+}
+
+.header {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Kanit", sans-serif;
+  color: var(--gray-800);
+}
+
+/*# sourceMappingURL=style.css.map */

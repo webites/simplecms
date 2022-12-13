@@ -1,0 +1,19 @@
+{
+  "name": "simple-default",
+  "version": "1.0.0",
+  "description": "Default theme for Simple CMS Frontend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "sass res/sass/base.scss assets/css/style.css",
+    "prod": "sass res/sass/base.scss assets/css/style.min.css --style=compressed",
+    "watch": "sass res/sass/base.scss assets/css/style.css --watch",
+    "bootstrap": "sass node_modules/bootstrap/scss/bootstrap.scss assets/css/bootstrap.min.css --style=compressed"
+  },
+  "author": "webites.pl",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.2"
+  }
+}
