@@ -25,6 +25,7 @@ class View
     public function renderView()
     {
         $page = new Page($this->pageId);
+        $site = new Site();
         require_once('theme/header-' . $this->header . '.php');
         require_once('theme/page-' . $this->template . '.php');
         require_once('theme/footer-' . $this->footer . '.php');

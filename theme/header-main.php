@@ -13,7 +13,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 col-lg-5">
-                Logo
+                <img src="<?php echo $site->getLogoUrl(); ?>" alt="">
             </div>
             <div class="col-12 col-lg-7">
                 <ul class="d-flex justify-content-center">
