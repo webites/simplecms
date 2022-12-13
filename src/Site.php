@@ -17,7 +17,7 @@ class Site
 
             $data = $dbh->query('SELECT * FROM site_settings');
             $record = $data->fetch();
-            $this->logo = $record['name'];
+            $this->logo = $record['value'];
             $dbh = null;
         } catch (PDOException $e) {
             print "Error!: " . $e->getMessage() . "<br/>";
