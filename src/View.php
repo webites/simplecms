@@ -33,9 +33,9 @@ class View
 
         $hooks->add_action('simple_header', 'echo_this_in_header');
 
-        function echo_this_in_header()
+        function echo_this_in_header($page)
         {
-            echo "test";
+            echo $page['title'];
         }
 
 
