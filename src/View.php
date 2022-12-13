@@ -34,7 +34,7 @@ class View
 
         function echo_this_in_header($page)
         {
-            echo $page->title;
+            return $page->title;
         }
 
         require_once('theme/header-' . $this->header . '.php');
