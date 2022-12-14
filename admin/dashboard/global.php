@@ -63,8 +63,8 @@ $sign = substr($username, 0, 1);
                                 $label = str_replace("_", " ", $item);
                                 echo $item . " : " . $value . "\n";
                             ?>
-                                <label for="<?php $item ?>"><?php $label ?></label>
-                                <input type="text" id="<?php $item ?>" name="<?php $item ?>" value="<?php $value ?>">
+                                <label for="<?php echo $item ?>"><?php echo $label ?></label>
+                                <input type="text" id="<?php echo $item ?>" name="<?php echo $item ?>" value="<?php echo $value ?>">
                             <?php } ?>
 
                             <h4 id="simple-list-item-2">Item 2</h4>
