@@ -9,3 +9,5 @@ const DB_CHARSET = 'utf8mb4_unicode_ci';
 
 
 const SITE_URL = 'https://dev.simplecms.webites.dev';
+
+error_reporting(E_ALL);
