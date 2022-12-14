@@ -160,6 +160,7 @@
   text-transform: uppercase;
   font-size: 1.8rem;
   font-weight: 600;
+  margin-top: 2rem;
 }
 .dashboard__global__form__section input {
   height: 4rem;
