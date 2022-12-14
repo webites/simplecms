@@ -167,6 +167,20 @@
       &__section {
         display: flex;
         flex-direction: column;
+
+        & label {
+          text-transform: uppercase;
+          font-size: 1.8rem;
+          font-weight: 600;
+        }
+
+        & input {
+          height: 4rem;
+          padding: 0.4rem;
+          border-radius: 4px;
+          outline: none;
+          border: 1px solid $green;
+        }
       }
     }
   }
