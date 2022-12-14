@@ -147,6 +147,17 @@ get("/admin/pages/delete/$id", function ($id) {
     }
 });
 
+// Admin Global
+
+get('/admin/global', function () {
+    $auth = Database::connect();
+    if ($auth->isLoggedIn()) {
+        require_once('admin/dashboard/global.php');
+    } else {
+        header('Location: /login');
+    }
+});
+
 
 // Generate from pages
 $pages = new Pages();
