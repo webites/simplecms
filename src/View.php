@@ -27,6 +27,7 @@ class View
     public function renderView()
     {
         $page = new Page($this->pageId);
+        global $page;
         $site = new Site();
         $hooks = Hooks::getInstance();
 
