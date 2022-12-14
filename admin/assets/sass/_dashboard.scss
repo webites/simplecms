@@ -182,9 +182,13 @@
           outline: none;
           border-bottom: 1px solid $green;
           font-size: 1.4rem;
+          position: relative;
 
           &::after {
             content: "\F4CB";
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
           }
         }
       }

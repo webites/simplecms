@@ -169,9 +169,13 @@
   outline: none;
   border-bottom: 1px solid #198754;
   font-size: 1.4rem;
+  position: relative;
 }
 .dashboard__global__form__section input::after {
   content: "\f4cb";
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
 }
 
 html {
