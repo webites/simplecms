@@ -60,10 +60,13 @@ $sign = substr($username, 0, 1);
                             <h4 id="simple-list-item-1">Basic site info</h4>
                             <?php
                             foreach ($site as $item => $value) {
-                                $item = str_replace("_", " ", $item);
+                                $label = str_replace("_", " ", $item);
                                 echo $item . " : " . $value . "\n";
-                            }
                             ?>
+                                <label for="<?php $item ?>"><?php $label ?></label>
+                                <input type="text" id="<?php $item ?>" name="<?php $item ?>" value="<?php $value ?>">
+                            <?php } ?>
+
                             <h4 id="simple-list-item-2">Item 2</h4>
                             <p>...</p>
                             <h4 id="simple-list-item-3">Item 3</h4>
