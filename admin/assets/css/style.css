@@ -168,8 +168,10 @@
   border-radius: 4px;
   outline: none;
   border-bottom: 1px solid #198754;
-  border: none;
   font-size: 1.4rem;
+}
+.dashboard__global__form__section input::after {
+  content: "\f4cb";
 }
 
 html {

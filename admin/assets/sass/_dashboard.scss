@@ -181,8 +181,11 @@
           border-radius: 4px;
           outline: none;
           border-bottom: 1px solid $green;
-          border: none;
           font-size: 1.4rem;
+
+          &::after {
+            content: "\F4CB";
+          }
         }
       }
     }
