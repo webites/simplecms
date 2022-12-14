@@ -43,4 +43,13 @@ class Site
     {
         echo '<img src="' . $this->logo . '" alt="' . $this->site_name . '">';
     }
+
+    public function getSiteGlobal()
+    {
+        $return = [];
+        foreach ($this as $key => $value) {
+            $return[$key] = $value;
+        }
+        return $return;
+    }
 }
