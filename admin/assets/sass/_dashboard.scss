@@ -161,4 +161,13 @@
       }
     }
   }
+
+  &__global {
+    &__form {
+      &__section {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
 }

@@ -152,6 +152,10 @@
 .dashboard__info__item__add--little i {
   font-size: 3rem;
 }
+.dashboard__global__form__section {
+  display: flex;
+  flex-direction: column;
+}
 
 html {
   font-size: 62.5%;
