@@ -60,6 +60,7 @@ $sign = substr($username, 0, 1);
                             <h4 id="simple-list-item-1">Basic site info</h4>
                             <?php
                             foreach ($site as $item => $value) {
+                                $item = str_replace("_", " ", $item);
                                 echo $item . " : " . $value . "\n";
                             }
                             ?>
