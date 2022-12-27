@@ -119,9 +119,10 @@ post('/admin/pages/adding', function () {
         // echo "<br><hr><br>";
         // echo $new_page->getContent();
 
-        $alert = new Alert('/admin/pages', 'Dodano stronę');
+
         $hooks = Hooks::getInstance();
         $hooks->add_action('notifications', function () {
+            $alert = new Alert('/admin/pages', 'Dodano stronę');
             echo "<div class='alert-get'>" . $alert->message . "</div>";
         });
     }
