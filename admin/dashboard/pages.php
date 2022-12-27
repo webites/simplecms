@@ -40,7 +40,7 @@ $sign = substr($username, 0, 1);
                     <i class="bi bi-journal"></i>
                     <h2>Pages</h2>
                     <?php
-                    $hooks = Hooks::getInstance();
+
 
                     $hooks->do_action('notifications');
                     ?>
