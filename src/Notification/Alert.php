@@ -6,7 +6,7 @@ session_start();
 class Alert
 {
     protected $redirect;
-    protected $message;
+    public $message;
 
     public function __construct(string $redirect, string $message)
     {
@@ -14,7 +14,6 @@ class Alert
         $this->message = $message;
 
         header('Location: ' . $this->redirect);
-        $_SESSION['alert'] = "<div class='alert-con'>" . $this->message . "</div>";
     }
 
     public function getTheAlert()

@@ -117,8 +117,7 @@ post('/admin/pages/adding', function () {
         // echo $new_page->getContent();
 
         $alert = new Alert('/admin/pages', 'Dodano stronę');
-        echo $_SESSION['alert'];
-        unset($_SESSION['alert']);
+        echo "<div class='alert-con'>" . $alert->message . "</div>";
     }
 });
 
