@@ -12,7 +12,7 @@ class Alert
     {
         $this->redirect = $redirect;
         $this->message = $message;
-
+        $_SESSION['alert'] = "<div class='alert-con'>" . $this->message . "</div>";
         header('Location: ' . $this->redirect);
     }
 
