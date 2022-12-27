@@ -38,6 +38,10 @@ $sign = substr($username, 0, 1);
                 <div class="dashboard__info__title">
                     <i class="bi bi-journal"></i>
                     <h2>Pages</h2>
+                    <?php
+                    global $hooks;
+                    $hooks->do_action('notifications');
+                    ?>
                 </div>
 
                 <table class="table">

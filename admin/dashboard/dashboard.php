@@ -40,6 +40,10 @@ $sign = substr($username, 0, 1);
                     <i class="bi bi-grid-3x3-gap"></i>
                     <h2>Dashboard</h2>
                 </div>
+                <?php
+                global $hooks;
+                $hooks->do_action('notifications');
+                ?>
 
                 <?php $pages = new Pages();
                 $all = $pages->getLimit(5);
