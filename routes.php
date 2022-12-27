@@ -4,6 +4,7 @@ use Simple\Core\Pages;
 use Simple\Core\AddPage;
 use Simple\Core\Database;
 use Simple\Core\EditPage;
+use Simple\Core\Notification\Alert;
 use Simple\Core\View;
 
 require_once __DIR__ . '/router.php';
@@ -113,6 +114,8 @@ post('/admin/pages/adding', function () {
         echo 'ID: ' . $new_page->id;
         echo "<br><hr><br>";
         echo $new_page->getContent();
+
+        $alert = new Alert('/admin/pages', 'Dodano stronę');
     }
 });
 
