@@ -18,6 +18,6 @@ class Alert
 
     public function getTheAlert()
     {
-        echo "<div class='alert-get'>" . $this->message . "</div>";
+        return "<div class='alert-get'>" . $this->message . "</div>";
     }
 }
