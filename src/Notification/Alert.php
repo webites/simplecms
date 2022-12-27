@@ -13,10 +13,7 @@ class Alert
     {
         $this->redirect = $redirect;
         $this->message = $message;
-        $hooks = Hooks::getInstance();
-        $hooks->add_action('notifications', function () {
-            echo "<div class='alert-get'>" . $this->message . "</div>";
-        });
+
         header('Location: ' . $this->redirect);
     }
 
