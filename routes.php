@@ -110,10 +110,10 @@ post('/admin/pages/adding', function () {
     } else {
         $new_page = new AddPage($_POST['title'], $_POST['slug'], $_POST['excerpt'], $_POST['content']);
 
-        echo 'added: ' . $new_page->title;
-        echo 'ID: ' . $new_page->id;
-        echo "<br><hr><br>";
-        echo $new_page->getContent();
+        // echo 'added: ' . $new_page->title;
+        // echo 'ID: ' . $new_page->id;
+        // echo "<br><hr><br>";
+        // echo $new_page->getContent();
 
         $alert = new Alert('/admin/pages', 'Dodano stronę');
     }
