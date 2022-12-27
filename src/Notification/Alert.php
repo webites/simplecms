@@ -15,4 +15,9 @@ class Alert
         header('Location: ' . $this->redirect);
         return "<div class='alert'>" . $this->message . "</div>";
     }
+
+    public function getTheAlert()
+    {
+        echo "<div class='alert'>" . $this->message . "</div>";
+    }
 }
