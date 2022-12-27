@@ -107,6 +107,7 @@ get('/admin/pages', function () {
 });
 
 post('/admin/pages/adding', function () {
+    session_start();
     if (!is_csrf_valid()) {
         exit();
     } else {
