@@ -13,6 +13,6 @@ class Alert
         $this->message = $message;
 
         header('Location: ' . $this->redirect);
-        echo "<div class='alert'>" . $this->message . "";
+        echo "<div class='alert'>" . $this->message . "</div>";
     }
 }
