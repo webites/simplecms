@@ -13,11 +13,11 @@ class Alert
         $this->message = $message;
 
         header('Location: ' . $this->redirect);
-        return "<div class='alert'>" . $this->message . "</div>";
+        return "<div class='alert-con'>" . $this->message . "</div>";
     }
 
     public function getTheAlert()
     {
-        echo "<div class='alert'>" . $this->message . "</div>";
+        echo "<div class='alert-get'>" . $this->message . "</div>";
     }
 }
