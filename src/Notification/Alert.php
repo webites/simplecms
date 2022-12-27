@@ -2,7 +2,8 @@
 
 namespace Simple\Core\Notification;
 
-session_start();
+use voku\helper\Hooks;
+
 class Alert
 {
     protected $redirect;
@@ -13,8 +14,7 @@ class Alert
         session_start();
         $this->redirect = $redirect;
         $this->message = $message;
-        include_once('php-hooks.php');
-        global $hooks;
+        $hooks = Hooks::getInstance();
         $hooks->add_action('notifications', function () {
             echo "<div class='alert-get'>" . $this->message . "</div>";
         });
