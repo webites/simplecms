@@ -1,12 +1,13 @@
 <?php require __DIR__ . '/vendor/autoload.php';
 session_start();
 
+use Simple\Core\View;
 use Simple\Core\Pages;
+use voku\helper\Hooks;
 use Simple\Core\AddPage;
 use Simple\Core\Database;
 use Simple\Core\EditPage;
 use Simple\Core\Notification\Alert;
-use Simple\Core\View;
 
 require_once __DIR__ . '/router.php';
 

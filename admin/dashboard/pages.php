@@ -2,6 +2,7 @@
 
 use Simple\Core\Page;
 use Simple\Core\Pages;
+use voku\helper\Hooks;
 
 $sign = substr($username, 0, 1);
 ?>
@@ -39,7 +40,8 @@ $sign = substr($username, 0, 1);
                     <i class="bi bi-journal"></i>
                     <h2>Pages</h2>
                     <?php
-                    global $hooks;
+                    $hooks = Hooks::getInstance();
+
                     $hooks->do_action('notifications');
                     ?>
                 </div>
