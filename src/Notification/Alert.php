@@ -2,6 +2,7 @@
 
 namespace Simple\Core\Notification;
 
+session_start();
 class Alert
 {
     protected $redirect;
