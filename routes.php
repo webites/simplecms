@@ -97,6 +97,7 @@ get('/admin/pages/add-new', function () {
 });
 
 get('/admin/pages', function () {
+    session_start();
     $auth = Database::connect();
     if ($auth->isLoggedIn()) {
         require_once('admin/dashboard/pages.php');
