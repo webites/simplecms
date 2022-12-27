@@ -10,6 +10,7 @@ class Alert
 
     public function __construct(string $redirect, string $message)
     {
+        session_start();
         $this->redirect = $redirect;
         $this->message = $message;
         $_SESSION['alert'] = $this->message;
