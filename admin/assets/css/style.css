@@ -21,8 +21,16 @@
 .pages__actions__delete--active ~ .pages__actions__delete {
   display: block;
   position: absolute;
-  top: -10px;
-  right: 0;
+  top: -4px;
+  left: 155px;
+  background-color: #fff;
+  padding: 4px;
+  border: 1px solid black;
+  border-radius: 3px;
+  text-align: center;
+}
+.pages__actions__delete--active ~ .pages__actions__delete a {
+  color: #000;
 }
 
 .dashboard {
