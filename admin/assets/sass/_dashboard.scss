@@ -112,6 +112,12 @@
     background-color: #fff;
     border-radius: 8px;
 
+    & .table {
+      & td {
+        position: relative;
+      }
+    }
+
     &__title {
       display: flex;
       gap: 2rem;

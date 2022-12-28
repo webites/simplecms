@@ -20,7 +20,6 @@
 
     &__delete {
       display: none;
-      position: relative;
 
       &--active ~ & {
         display: block;
