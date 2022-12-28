@@ -74,9 +74,11 @@ $sign = substr($username, 0, 1);
                                         <i class="bi bi-x-circle-fill"></i>
                                     </button>
                                     <div class="pages__actions__delete page-id-delete-<?php echo $page['id'] ?>">
-                                        <a href="/admin/pages/delete/<?php echo $page['id'] ?>" class="pages__actions__delete--yes">Yes
+                                        <p>Are you sure</p>
+                                        <a href="/admin/pages/delete/<?php echo $page['id'] ?>" class="pages__actions__delete--yes">Yes</a>
+                                        <span class="pages__actions__delete---no">No</span>
                                     </div>
-                                    <span class="pages__actions__delete---no">No</span>
+
             </div>
             </td>
             </tr>

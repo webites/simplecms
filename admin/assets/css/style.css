@@ -3,6 +3,8 @@
   font-size: 2rem;
   margin: 0 0.8rem;
   text-decoration: none;
+  border: none;
+  background-color: transparent;
 }
 .pages__actions__button--watch {
   color: #198754;
