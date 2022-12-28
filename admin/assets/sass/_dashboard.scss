@@ -201,6 +201,7 @@
     padding: 1.2rem 1.6rem;
     border-radius: 4px;
     margin: 0.6rem 0;
+    position: relative;
 
     &--info {
       border: 1px solid $green;
@@ -219,6 +220,8 @@
     &__close {
       border: none;
       outline: none;
+      position: absolute;
+      right: 2.4rem;
 
       & i {
         color: rgba($blue, 0.8);

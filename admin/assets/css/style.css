@@ -183,6 +183,7 @@
   padding: 1.2rem 1.6rem;
   border-radius: 4px;
   margin: 0.6rem 0;
+  position: relative;
 }
 .dashboard__notification--info {
   border: 1px solid #198754;
@@ -199,6 +200,8 @@
 .dashboard__notification__close {
   border: none;
   outline: none;
+  position: absolute;
+  right: 2.4rem;
 }
 .dashboard__notification__close i {
   color: rgba(36, 122, 253, 0.8);
