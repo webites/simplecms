@@ -17,5 +17,9 @@
         color: $red;
       }
     }
+
+    &__delete {
+      display: none;
+    }
   }
 }

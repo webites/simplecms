@@ -15,6 +15,9 @@
 .pages__actions__button--delete {
   color: #dc3545;
 }
+.pages__actions__delete {
+  display: none;
+}
 
 .dashboard {
   min-height: 100vh;

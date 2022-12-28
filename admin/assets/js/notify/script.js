@@ -1,5 +1,13 @@
-const btn = document.getElementById("dashboard__notification__close");
+const btnClose = document.getElementById("dashboard__notification__close");
 const modal = document.querySelector(".dashboard__notification");
-btn.addEventListener("click", function () {
+btnClose.addEventListener("click", function () {
   modal.style.display = "none";
+});
+
+const btnDelete = document.querySelectorAll(".pages__actions__button--delete");
+
+btnDelete.forEach(function (e) {
+  e.addEventListener("click", function () {
+    document.querySelector(".pages__actions__delete").style.display = "block";
+  });
 });
