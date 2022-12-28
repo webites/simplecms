@@ -2,7 +2,7 @@ const btnDelete = document.querySelectorAll(".pages__actions__button--delete");
 
 btnDelete.forEach(function (e) {
   e.addEventListener("click", function () {
-    btnDelete.classList.toggle("pages__actions__delete--active");
+    e.classList.toggle("pages__actions__delete--active");
   });
 });
 
