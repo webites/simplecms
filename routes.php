@@ -6,6 +6,7 @@ use Simple\Core\Pages;
 use voku\helper\Hooks;
 use Simple\Core\AddPage;
 use Simple\Core\Database;
+use Simple\Core\DeletePage;
 use Simple\Core\EditPage;
 use Simple\Core\Notification\Alert;
 
@@ -158,7 +159,8 @@ post('/admin/pages/editing', function () {
 get('/admin/pages/delete/$id', function ($id) {
     $auth = Database::connect();
     if ($auth->isLoggedIn()) {
-        require_once('admin/dashboard/page-delete.php');
+        $deleted_page = new DeletePage($id);
+        $alert = new Alert('/admin/pages', 'Strona usunięta');
     } else {
         header('Location: /login');
     }
