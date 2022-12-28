@@ -31,8 +31,6 @@ class EditPage
 
                 if ($row['slug'] == $this->slug && $row['id'] != $this->id) {
                     $slug_exist = true;
-                } else {
-                    $slug_exist = false;
                 }
             }
             $dbh = null;
