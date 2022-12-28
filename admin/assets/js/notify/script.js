@@ -7,9 +7,9 @@ btnDelete.forEach(function (e) {
 });
 
 const btnDeleteNo = document.querySelectorAll("pages__actions__delete---no");
-btnDelete.forEach(function (e) {
-  e.addEventListener("click", function () {
-    e.classList.remove("pages__actions__delete--active");
+btnDeleteNo.forEach(function (ev) {
+  btnDeleteNo.addEventListener("click", function () {
+    btnDelete.classList.remove("pages__actions__delete--active");
   });
 });
 
