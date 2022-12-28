@@ -8,8 +8,10 @@ btnDelete.forEach(function (e) {
 
 const btnDeleteNo = document.querySelectorAll("pages__actions__delete---no");
 btnDeleteNo.forEach(function (ev) {
-  btnDeleteNo.addEventListener("click", function () {
-    btnDelete.classList.remove("pages__actions__delete--active");
+  ev.addEventListener("click", function () {
+    ev.parentElement.previousElementSibling.classList.remove(
+      "pages__actions__delete--active"
+    );
   });
 });
 
