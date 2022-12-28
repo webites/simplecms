@@ -70,20 +70,25 @@ $sign = substr($username, 0, 1);
                                     <a href="<?php echo SITE_URL ?>/admin/pages/edit/<?php echo $page['id'] ?>" class="pages__actions__button pages__actions__button--edit">
                                         <i class="bi bi-pencil-fill"></i>
                                     </a>
-                                    <a href="#" class="pages__actions__button pages__actions__button--delete">
+                                    <button class="pages__actions__button pages__actions__button--delete">
                                         <i class="bi bi-x-circle-fill"></i>
-                                    </a>
-                                </td>
-                            </tr>
-                        <?php } ?>
-                    </tbody>
-                </table>
-                <a href="./pages/add-new" class="dashboard__info__item__add--little">
-                    <i class="bi bi-plus-circle"></i>
-                    <span>Add new page</span>
-                </a>
+                                    </button>
+                                    <div class="pages__actions__delete page-id-delete-<?php echo $page['id'] ?>">
+                                        <a href="/admin/pages/delete/<?php echo $page['id'] ?>" class="pages__actions__delete--yes">Yes
+                                    </div>
+                                    <span class="pages__actions__delete---no">No</span>
             </div>
+            </td>
+            </tr>
+        <?php } ?>
+        </tbody>
+        </table>
+        <a href="./pages/add-new" class="dashboard__info__item__add--little">
+            <i class="bi bi-plus-circle"></i>
+            <span>Add new page</span>
+        </a>
         </div>
+    </div>
     </div>
 
     <script src="<?php echo SITE_URL ?>/admin/assets/js/notify/script.js"></script>
