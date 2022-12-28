@@ -30,7 +30,7 @@ class EditPage
             foreach ($record as $row) {
 
                 if ($row['slug'] == $this->slug) {
-                    if ($row['id'] == $this->id) {
+                    if ($row['id'] != $this->id) {
                         $slug_exist = true;
                         $this->inserted = false;
                     } else {
