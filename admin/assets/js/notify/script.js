@@ -2,8 +2,9 @@ const btnDelete = document.querySelectorAll(".pages__actions__button--delete");
 
 btnDelete.forEach(function (e) {
   e.addEventListener("click", function () {
-    let id = e.node.getAttribute("data-delete-id");
-    document.querySelector(".pages__actions__delete").style.display = "block";
+    document
+      .querySelector(".pages__actions__delete")
+      .classList.toggle("pages__actions__delete--active");
     console.log(id);
   });
 });
