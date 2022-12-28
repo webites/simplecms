@@ -155,7 +155,7 @@ post('/admin/pages/editing', function () {
     }
 });
 
-get("/admin/pages/delete/$id", function ($id) {
+get('/admin/pages/delete/$id', function ($id) {
     $auth = Database::connect();
     if ($auth->isLoggedIn()) {
         require_once('admin/dashboard/page-delete.php');
