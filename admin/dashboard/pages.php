@@ -39,12 +39,8 @@ $sign = substr($username, 0, 1);
                 <div class="dashboard__info__title">
                     <i class="bi bi-journal"></i>
                     <h2>Pages</h2>
-                    <?php
-                    if ($_SESSION['alert']) {
-                        echo $_SESSION['alert'];
-                    }
-                    ?>
                 </div>
+                <?php display_notification(); ?>
 
                 <table class="table">
                     <thead>

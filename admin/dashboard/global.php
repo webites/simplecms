@@ -44,10 +44,7 @@ $sign = substr($username, 0, 1);
                     <i class="bi bi-grid-3x3-gap"></i>
                     <h2>Dashboard</h2>
                 </div>
-                <?php
-                global $hooks;
-                $hooks->do_action('notifications');
-                ?>
+                <?php display_notification(); ?>
                 <div class="row">
                     <div class="col-4">
                         <div id="simple-list-example" class="d-flex flex-column gap-2 simple-list-example-scrollspy text-center">
