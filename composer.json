@@ -8,7 +8,8 @@
     },
     "files": [
       "config.php",
-      "theme/theme_functions.php"
+      "theme/theme_functions.php",
+      "src/Functions/admin_functions.php"
     ]
   },
   "authors": [
