@@ -208,5 +208,12 @@
       background-color: rgba($green, 0.1);
       color: $green;
     }
+
+    &--fail {
+      border: 1px solid $red;
+      border-left: 5px solid $red;
+      background-color: rgba($red, 0.1);
+      color: $red;
+    }
   }
 }
