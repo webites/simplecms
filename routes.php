@@ -120,7 +120,7 @@ post('/admin/pages/adding', function () {
         // echo $new_page->getContent();
 
 
-        $alert = new Alert('/admin/pages', 'Dodano stronę');
+        $alert = new Alert('/admin/pages', 'Dodano stronę <strong>' . $new_page->title . '<strong>');
     }
 });
 
