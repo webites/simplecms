@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="<?php echo SITE_URL ?>/admin/assets/css/bootstrap.min.css" />
-    <title><?php $hooks->do_action('simple_header'); ?></title>
+    <title><?php //$hooks->do_action('simple_header'); 
+            ?></title>
 
 </head>
 
