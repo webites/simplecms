@@ -20,6 +20,10 @@
 
     &__delete {
       display: none;
+
+      &--active ~ & {
+        display: block;
+      }
     }
   }
 }

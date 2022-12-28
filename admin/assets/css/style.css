@@ -18,6 +18,9 @@
 .pages__actions__delete {
   display: none;
 }
+.pages__actions__delete--active ~ .pages__actions__delete {
+  display: block;
+}
 
 .dashboard {
   min-height: 100vh;
