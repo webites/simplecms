@@ -20,9 +20,13 @@
 
     &__delete {
       display: none;
+      position: relative;
 
       &--active ~ & {
         display: block;
+        position: absolute;
+        top: -10px;
+        right: 0;
       }
     }
   }
