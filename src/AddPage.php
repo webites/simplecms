@@ -29,7 +29,7 @@ class AddPage
 
                 if ($row['slug'] == $this->slug) {
                     $slug_exist = true;
-                    return 'slug_exist';
+                    return false;
                 }
             }
             $dbh = null;
