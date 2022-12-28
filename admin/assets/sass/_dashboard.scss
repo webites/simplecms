@@ -215,5 +215,14 @@
       background-color: rgba($red, 0.1);
       color: $red;
     }
+
+    &__close {
+      border: none;
+      outline: none;
+
+      & i {
+        color: rgba($blue, 0.8);
+      }
+    }
   }
 }

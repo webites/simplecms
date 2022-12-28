@@ -196,6 +196,13 @@
   background-color: rgba(220, 53, 69, 0.1);
   color: #dc3545;
 }
+.dashboard__notification__close {
+  border: none;
+  outline: none;
+}
+.dashboard__notification__close i {
+  color: rgba(36, 122, 253, 0.8);
+}
 
 html {
   font-size: 62.5%;
