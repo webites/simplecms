@@ -51,6 +51,9 @@ class EditPage
                 $this->inserted = true;
                 return true;
                 $dbh = null;
+            } else {
+                $this->inserted = false;
+                return false;
             }
 
             $dbh = null;
