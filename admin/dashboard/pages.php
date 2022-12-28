@@ -76,7 +76,7 @@ $sign = substr($username, 0, 1);
                                     <div class="pages__actions__delete" data-delete-id="<?php echo $page['id'] ?>">
                                         <p>Are you sure</p>
                                         <a href="/admin/pages/delete/<?php echo $page['id'] ?>" class="pages__actions__delete--yes">Yes</a>
-                                        <span class="pages__actions__delete---no">No</span>
+                                        <span class="pages__actions__delete--no">No</span>
                                     </div>
 
             </div>
