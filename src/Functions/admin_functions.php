@@ -12,5 +12,5 @@ function display_notification()
 
 function slug_creator($slug)
 {
-    return str_replace(' ', '-', $slug);
+    return strtolower(str_replace(' ', '-', $slug));
 }
