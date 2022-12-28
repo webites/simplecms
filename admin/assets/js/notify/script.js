@@ -6,13 +6,6 @@ btnDelete.forEach(function (e) {
   });
 });
 
-const btnDeleteNo = document.querySelector("pages__actions__delete--no");
-// btnDeleteNo.forEach(function (ev) {
-btnDeleteNo.addEventListener("click", function () {
-  btnDeleteNo.classList.add("pages__actions__delete--active");
-});
-// });
-
 const btnClose = document.getElementById("dashboard__notification__close");
 const modal = document.querySelector(".dashboard__notification");
 btnClose.addEventListener("click", function () {
