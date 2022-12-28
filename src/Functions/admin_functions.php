@@ -9,3 +9,8 @@ function display_notification()
         unset($_SESSION['type']);
     }
 }
+
+function slug_creator($slug)
+{
+    return str_replace(' ', '-', $slug);
+}

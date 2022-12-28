@@ -16,7 +16,7 @@ class AddPage
     {
 
         $this->title = htmlspecialchars($title, ENT_QUOTES);
-        $this->slug =  htmlspecialchars($slug, ENT_QUOTES);
+        $this->slug =  slug_creator(htmlspecialchars($slug, ENT_QUOTES));
         $this->excerpt =  htmlspecialchars($excerpt, ENT_QUOTES);
         $this->content = $content;
         try {
