@@ -142,10 +142,16 @@ post('/admin/pages/editing', function () {
     } else {
         $edited_page = new EditPage($_POST['id'], $_POST['title'], $_POST['slug'], $_POST['excerpt'], $_POST['content']);
 
-        echo 'added: ' . $edited_page->title;
-        echo 'ID: ' . $edited_page->id;
-        echo "<br><hr><br>";
-        echo $edited_page->getContent();
+        // echo 'added: ' . $edited_page->title;
+        // echo 'ID: ' . $edited_page->id;
+        // echo "<br><hr><br>";
+        // echo $edited_page->getContent();
+
+        if ($edited_page->inserted == false) {
+            $alert = new Alert('/admin/pages', 'Coś poszło nie tak. Prawdopodobnie slug juz istnieje', 'fail');
+        } else {
+            $alert = new Alert('/admin/pages', 'Pomyślnie edytowano stronę <strong>' . $edited_page->title . '<strong>');
+        }
     }
 });
 

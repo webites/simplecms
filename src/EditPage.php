@@ -20,6 +20,7 @@ class EditPage
         $this->excerpt =  htmlspecialchars($excerpt, ENT_QUOTES);
         $this->content = $content;
         $this->id = $id;
+        $this->updated;
         try {
             $dbh = new PDO("mysql:host=" . DB_HOST . ";dbname=" . DB_DATABASE . ";charset=utf8", DB_USER, DB_PASSWORD);
 
@@ -31,8 +32,7 @@ class EditPage
                 if ($row['slug'] == $this->slug) {
                     if ($row['id'] == $this->id) {
                         $slug_exist = true;
-                        echo 'Taki slug ju isteje';
-                        exit("Wymyśl nowy");
+                        $this->inserted = false;
                     } else {
                         $slug_exist = false;
                     }
