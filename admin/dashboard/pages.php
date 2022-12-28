@@ -85,6 +85,8 @@ $sign = substr($username, 0, 1);
             </div>
         </div>
     </div>
+
+    <script src="<?php echo SITE_URL ?>/admin/assets/js/notify/script.js"></script>
 </body>
 
 </html>

@@ -89,6 +89,8 @@ $sign = substr($username, 0, 1);
     </div>
 
     <script src="<?php SITE_URL ?>/admin/assets/node_modules/bootstrap/js/src/scrollspy.js"></script>
+    <script src="<?php echo SITE_URL ?>/admin/assets/js/notify/script.js"></script>
+
 </body>
 
 </html>
