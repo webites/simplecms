@@ -1,8 +1,7 @@
 const btnDelete = document.querySelectorAll(".pages__actions__button--delete");
 
-btnDelete.forEach(function (e) {
-  console.log(e);
-  e.addEventListener("click", function () {
+btnDelete.addEventListener("click", function (e) {
+  e.forEach(function () {
     document.querySelector(".pages__actions__delete").style.display = "block";
   });
 });
