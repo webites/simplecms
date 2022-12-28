@@ -51,6 +51,8 @@ class AddPage
 
                 return true;
                 $dbh = null;
+            } else {
+                return false;
             }
 
             $dbh = null;
