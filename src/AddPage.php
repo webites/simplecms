@@ -29,8 +29,7 @@ class AddPage
 
                 if ($row['slug'] == $this->slug) {
                     $slug_exist = true;
-                    echo 'Taki slug ju isteje';
-                    exit("Wymyśl nowy");
+                    return 'slug_exist';
                 }
             }
             $dbh = null;
