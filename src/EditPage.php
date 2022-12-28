@@ -48,7 +48,7 @@ class EditPage
                 $response = $stmt->execute([$this->title, $this->slug, $this->excerpt, $this->content]);
                 $dbh = null;
 
-
+                $this->inserted = true;
                 return true;
                 $dbh = null;
             }
