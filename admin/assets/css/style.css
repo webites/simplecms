@@ -177,6 +177,17 @@
   top: 1rem;
   right: 1rem;
 }
+.dashboard__notification {
+  font-size: 2rem;
+  font-weight: 800;
+  padding: 1.2rem 1.6rem;
+  border-radius: 4px;
+  margin: 0.6rem 0;
+}
+.dashboard__notification--info {
+  border: 1px solid #198754;
+  border-left: 5px solid #198754;
+}
 
 html {
   font-size: 62.5%;
