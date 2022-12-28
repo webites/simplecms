@@ -2,7 +2,7 @@
 
 namespace Simple\Core\Notification;
 
-use voku\helper\Hooks;
+session_start();
 
 class Alert
 {
@@ -13,7 +13,7 @@ class Alert
     {
         $this->redirect = $redirect;
         $this->message = $message;
-
+        $_SESSION['alert'] = $this->message;
         header('Location: ' . $this->redirect);
     }
 

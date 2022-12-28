@@ -40,9 +40,9 @@ $sign = substr($username, 0, 1);
                     <i class="bi bi-journal"></i>
                     <h2>Pages</h2>
                     <?php
-
-
-                    $hooks->do_action('notifications');
+                    if ($_SESSION['alert']) {
+                        echo $_SESSION['alert'];
+                    }
                     ?>
                 </div>
 
