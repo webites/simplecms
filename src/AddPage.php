@@ -10,6 +10,7 @@ class AddPage
     public $title;
     public $slug;
     public $excerpt;
+    public $inserted;
     protected $content;
 
     public function __construct($title, $slug, $excerpt, $content)
@@ -47,11 +48,12 @@ class AddPage
                 $data = $dbh->query("SELECT id FROM pages_active WHERE slug='" . $this->slug . "'");
                 $record = $data->fetch();
                 $this->id = $record['id'];
-
+                $this->inserted = true;
 
                 return true;
                 $dbh = null;
             } else {
+                $this->inserted = false;
                 return false;
             }
 

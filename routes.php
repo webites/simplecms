@@ -119,7 +119,7 @@ post('/admin/pages/adding', function () {
         // echo "<br><hr><br>";
         // echo $new_page->getContent();
 
-        if ($new_page == false) {
+        if ($new_page->inserted == false) {
             $alert = new Alert('/admin/pages', 'Ten slug juz istnieje. Wymyśl nowy.', 'fail');
         } else {
             $alert = new Alert('/admin/pages', 'Dodano stronę <strong>' . $new_page->title . '<strong>');
