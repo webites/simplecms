@@ -59,29 +59,12 @@ $sign = substr($username, 0, 1);
     </div>
 
     <script>
-        import SimpleUploadAdapter from 'node_modules/@ckeditor/ckeditor5-upload/src/adapters/simpleuploadadapter';
-
         ClassicEditor
             .create(document.querySelector('#content'), {
-                plugins: [SimpleUploadAdapter],
-                simpleUpload: {
-                    // The URL that the images are uploaded to.
-                    uploadUrl: <?php echo SITE_URL ?>,
-
-                    // Enable the XMLHttpRequest.withCredentials property.
-                    withCredentials: true,
-
-                    // Headers sent along with the XMLHttpRequest to the upload server.
-                    headers: {
-                        'X-CSRF-TOKEN': 'CSRF-Token',
-                        //Authorization: 'Bearer <JSON Web Token>'
-                    }
+                image: {
+                    toolbar: ['toggleImageCaption', 'imageTextAlternative']
                 }
             })
-            .then(editor => {
-                window.editor = editor;
-            })
-        // .catch(...);
     </script>
 </body>
 
