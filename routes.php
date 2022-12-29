@@ -219,7 +219,8 @@ get('/generate-sitemap', function () {
 
     var_dump($robots_response); */
 
-    new SitemapGenerator();
+    $sitemap = new SitemapGenerator();
+    var_dump($sitemap);
 });
 
 // For GET or POST
