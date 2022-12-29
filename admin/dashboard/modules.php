@@ -47,7 +47,12 @@ $sign = substr($username, 0, 1);
                 </div>
                 <?php display_notification(); ?>
 
-                <?php Manager::getModules(); ?>
+                <?php
+                $modules = Manager::getModules();
+                foreach ($modules as $module) {
+                    echo "<a href='/admin/modules/" . $module . "' class=''><h3>" . $module . "</h3></a>";
+                }
+                ?>
 
             </div>
 
