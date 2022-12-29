@@ -189,6 +189,15 @@ get('/admin/modules', function () {
     }
 });
 
+get('/admin/modules/$name', function ($name) {
+    $auth = Database::connect();
+    if ($auth->isLoggedIn()) {
+        require_once('admin/dashboard/module-options.php');
+    } else {
+        header('Location: /login');
+    }
+});
+
 
 // Generate from pages
 $pages = new Pages();

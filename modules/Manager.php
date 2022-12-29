@@ -16,6 +16,12 @@ class Manager
                 array_push($current_modules, $module);
             }
         }
-        var_dump($current_modules);
+        return $current_modules;
+    }
+
+    static function moduleOptions($name)
+    {
+        $options = file_get_contents('modules/' . $name);
+        var_dump($options);
     }
 }
