@@ -4,6 +4,7 @@ use Simple\Core\Page;
 use Simple\Core\Pages;
 use Simple\Core\Site;
 use Simple\Core\Theme;
+use Simple\Modules\Manager;
 
 $site = new Site();
 $site = $site->getSiteGlobal();
@@ -45,6 +46,8 @@ $sign = substr($username, 0, 1);
                     <h2>Modules</h2>
                 </div>
                 <?php display_notification(); ?>
+
+                <?php Manager::getModules(); ?>
 
             </div>
 
