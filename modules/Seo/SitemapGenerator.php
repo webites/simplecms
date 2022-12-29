@@ -1,6 +1,6 @@
 <?php
 
-namespace Simple\Modules;
+namespace Simple\Modules\Seo;
 
 use Simple\Core\Pages;
 
