@@ -59,7 +59,7 @@ $sign = substr($username, 0, 1);
     </div>
 
     <script>
-        import SimpleUploadAdapter from 'node_modules/@ckeditor/ckeditor5-upload/src/adapters/simpleuploadadapter';
+        import SimpleUploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/simpleuploadadapter';
 
         ClassicEditor
             .create(document.querySelector('#content'), {
