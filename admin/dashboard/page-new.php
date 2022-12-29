@@ -74,12 +74,12 @@ $sign = substr($username, 0, 1);
                     // Headers sent along with the XMLHttpRequest to the upload server.
                     headers: {
                         'X-CSRF-TOKEN': 'CSRF-Token',
-                        Authorization: 'Bearer <JSON Web Token>'
+                        //Authorization: 'Bearer <JSON Web Token>'
                     }
                 }
             })
-            .then(...)
-            .catch(...);
+        // .then(...)
+        // .catch(...);
     </script>
 </body>
 
