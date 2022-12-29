@@ -80,6 +80,7 @@ $sign = substr($username, 0, 1);
                     'buttons': ['undo', 'redo', 'fullscreen', 'print', 'getPDF', 'spellChecker', 'selectAll', 'html', 'help']
                 }
             },
+            imageInsertButtons: ['imageBack', '|', 'imageByURL'],
             fontFamilySelection: true,
             fontSizeSelection: true,
             paragraphFormatSelection: true
