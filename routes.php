@@ -215,6 +215,8 @@ get('/generate-sitemap', function () {
     $robots_handle = fopen('robots.txt', "w");
     $robots_response = fwrite($robots_handle, $robots);
     fclose($robots_handle);
+
+    var_dump($robots_response);
 });
 
 // For GET or POST
