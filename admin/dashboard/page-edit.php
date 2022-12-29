@@ -47,13 +47,21 @@ $page = $pages->getPageById($id);
                 <form action="../editing" method="post" class="d-flex flex-column justify-content-center gap-4">
                     <?php set_csrf() ?>
                     <input type="hidden" name="id" value="<?php echo $page['id'] ?>">
-                    <label for="title">Title</label>
+                    <label for="title">
+                        <h4>Title</h4>
+                    </label>
                     <input type="text" name="title" id="title" value="<?php echo $page['title'] ?>">
-                    <label for="slug">Slug (without / )</label>
+                    <label for="slug">
+                        <h4>Slug (without / )</h4>
+                    </label>
                     <input type="text" name="slug" id="slug" value="<?php echo $page['slug'] ?>">
-                    <label for="exceprt">Excerpt</label>
+                    <label for="exceprt">
+                        <h4>Excerpt</h4>
+                    </label>
                     <textarea name="excerpt" id="excerpt" cols="60" rows="10"><?php echo $page['excerpt'] ?></textarea>
-                    <label for="content">Content</label>
+                    <label for="content">
+                        <h4>Content</h4>
+                    </label>
                     <textarea name="content" id="content" cols="60" rows="10"><?php echo $page['content'] ?></textarea>
                     <input type="submit" value="Update" class="btn btn-primary py-3 px-5 w-25">
                 </form>
