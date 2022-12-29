@@ -65,7 +65,7 @@ $sign = substr($username, 0, 1);
             fileUseSelectedText: true,
             imageManagerLoadURL: '/images',
             imageUploadRemoteUrls: false,
-            toolbarButtons: ['fontFamily', '|', 'fontSize', '|', 'paragraphFormat', '|', 'bold', 'italic', 'underline', 'undo', 'redo', 'codeView'],
+            toolbarButtons: ['fontFamily', '|', 'fontSize', '|', 'paragraphFormat', '|', 'bold', 'italic', 'underline', 'textColor', 'backgroundColor', 'undo', 'redo', 'codeView'],
             fontFamilySelection: true,
             fontSizeSelection: true,
             paragraphFormatSelection: true
