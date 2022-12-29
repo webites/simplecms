@@ -238,6 +238,7 @@
   &__module {
     &__title {
       display: flex;
+      align-items: center;
       gap: 1rem;
       color: $blue;
       text-decoration: none;
