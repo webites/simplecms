@@ -204,7 +204,7 @@ get('/generate-sitemap', function () {
       </url>';
     }
     $content .= '</urlset>';
-    $file = SITE_URL . '/sitemap.xml';
+    $file = '/sitemap.xml';
     $response = file_put_contents($file, $content, FILE_USE_INCLUDE_PATH);
     var_dump($response);
 });
