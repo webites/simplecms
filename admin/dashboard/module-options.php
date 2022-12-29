@@ -11,6 +11,7 @@ $site = $site->getSiteGlobal();
 
 $sign = substr($username, 0, 1);
 ?>
+<?php $module = Manager::moduleOptions($name); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -43,11 +44,11 @@ $sign = substr($username, 0, 1);
             <div class="dashboard__info">
                 <div class="dashboard__info__title">
                     <i class="bi bi-grid-3x3-gap"></i>
-                    <h2>Modules</h2>
+                    <h2>Module - <?php echo $module->label ?></h2>
                 </div>
                 <?php display_notification(); ?>
 
-                <?php Manager::moduleOptions($name); ?>
+
 
             </div>
 

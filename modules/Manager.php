@@ -23,6 +23,6 @@ class Manager
     {
         $options = file_get_contents('./modules/' . $name . '/options.json');
         $options = json_decode($options);
-        var_dump($options);
+        return $options;
     }
 }
