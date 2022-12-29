@@ -66,6 +66,9 @@ $sign = substr($username, 0, 1);
             imageManagerLoadURL: '/images',
             imageUploadRemoteUrls: false,
             toolbarButtons: ['fontFamily', '|', 'fontSize', '|', 'paragraphFormat', '|', 'bold', 'italic', 'underline', 'undo', 'redo', 'codeView'],
+            fontFamilySelection: true,
+            fontSizeSelection: true,
+            paragraphFormatSelection: true
         });
     </script>
 </body>
