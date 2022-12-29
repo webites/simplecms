@@ -11,6 +11,7 @@ class EditPage
     public $slug;
     public $excerpt;
     protected $content;
+    public $updated;
 
     public function __construct($id, $title, $slug, $excerpt, $content)
     {
@@ -29,7 +30,7 @@ class EditPage
             $slug_exist = false;
             foreach ($record as $row) {
 
-                if ($row['slug'] == $this->slug && $row['id'] != $this->id) {
+                if ($row['slug'] == $this->slug && $row['id'] == $this->id) {
                     $slug_exist = true;
                 }
             }
@@ -43,11 +44,10 @@ class EditPage
                 $response = $stmt->execute([$this->title, $this->slug, $this->excerpt, $this->content]);
                 $dbh = null;
 
-                $this->inserted = true;
+                $this->updated = true;
                 return true;
-                $dbh = null;
             } else {
-                $this->inserted = false;
+                $this->updated = false;
                 return false;
             }
 
