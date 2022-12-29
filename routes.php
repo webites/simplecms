@@ -193,7 +193,19 @@ foreach ($all_pages as $page) {
 
 // Generate sitemap
 
-
+get('/generate-sitemap', function () {
+    $content = '<?xml version="1.0" encoding="UTF-8"?>
+    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">';
+    $pages = new Pages();
+    $all_pages = $pages->getAll();
+    foreach ($all_pages as $page) {
+        $content .= '<url>
+        <loc>' . SITE_URL . '/' . $page['slug'] . '</loc>
+      </url>';
+    }
+    $content .= '</urlset>';
+    file_put_contents(SITE_URL . '/sitemap.xml', $content);
+});
 
 // For GET or POST
 // The 404.php which is inside the views folder will be called
