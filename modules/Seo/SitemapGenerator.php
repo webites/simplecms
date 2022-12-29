@@ -2,6 +2,7 @@
 
 namespace Simple\Modules\Seo;
 
+use Simple\Core\Notification\Alert;
 use Simple\Core\Pages;
 
 class SitemapGenerator
@@ -34,6 +35,8 @@ class SitemapGenerator
         $robots_response = fwrite($robots_handle, $robots);
         fclose($robots_handle);
 
-        return true;
+
+
+        // return true;
     }
 }

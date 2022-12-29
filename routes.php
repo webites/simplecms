@@ -216,6 +216,7 @@ foreach ($all_pages as $page) {
 
 get('/generate-sitemap', function () {
     new SitemapGenerator();
+    new Alert('/admin/modules/Seo', "Wygenerowano mapę witryny i plik robots.txt");
 });
 
 // For GET or POST
