@@ -49,7 +49,7 @@ $sign = substr($username, 0, 1);
                 <?php display_notification(); ?>
 
                 <h2 class="dashboard__module__title"><?php echo $module->icon ?><?php echo $module->label ?> </h2>
-                <p><?php echo $module->description ?></p>
+                <p class="dashboard__module__desc"><?php echo $module->description ?></p>
                 <a href="<?php echo $module->button->callback ?>" class="btn btn-primary"><?php echo $module->button->text ?></a>
 
             </div>
