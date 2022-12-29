@@ -232,6 +232,13 @@
 .dashboard__notification__close i {
   color: rgba(36, 122, 253, 0.8);
 }
+.dashboard__modules__title {
+  display: flex;
+  gap: 1rem;
+  color: #247afd;
+  text-decoration: none;
+  font-size: 4rem;
+}
 
 html {
   font-size: 62.5%;

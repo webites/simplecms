@@ -234,4 +234,14 @@
       }
     }
   }
+
+  &__modules {
+    &__title {
+      display: flex;
+      gap: 1rem;
+      color: $blue;
+      text-decoration: none;
+      font-size: 4rem;
+    }
+  }
 }
