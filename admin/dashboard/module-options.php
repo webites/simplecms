@@ -50,7 +50,7 @@ $sign = substr($username, 0, 1);
 
                 <h2><?php echo $module->label ?></h2>
                 <p><?php echo $module->description ?></p>
-                <a href="<?php echo $module->callback ?>" target="_blank" class="btn btn-primary"><?php echo $module->text ?></a>
+                <a href="<?php echo $module->button->callback ?>" target="_blank" class="btn btn-primary"><?php echo $module->button->text ?></a>
 
             </div>
 
