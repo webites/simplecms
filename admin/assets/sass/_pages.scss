@@ -24,8 +24,8 @@
       &--active ~ & {
         display: block;
         position: absolute;
-        top: -4px;
-        left: 155px;
+        top: -10px;
+        left: 125px;
         background-color: #fff;
         padding: 4px;
         border: 1px solid black;
@@ -34,6 +34,13 @@
 
         & a {
           color: #000;
+        }
+      }
+
+      &--yes {
+        & i {
+          font-size: 2rem;
+          color: $green;
         }
       }
     }

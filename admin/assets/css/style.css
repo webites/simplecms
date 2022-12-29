@@ -21,8 +21,8 @@
 .pages__actions__delete--active ~ .pages__actions__delete {
   display: block;
   position: absolute;
-  top: -4px;
-  left: 155px;
+  top: -10px;
+  left: 125px;
   background-color: #fff;
   padding: 4px;
   border: 1px solid black;
@@ -31,6 +31,10 @@
 }
 .pages__actions__delete--active ~ .pages__actions__delete a {
   color: #000;
+}
+.pages__actions__delete--yes i {
+  font-size: 2rem;
+  color: #198754;
 }
 
 .dashboard {
