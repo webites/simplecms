@@ -43,15 +43,23 @@ $sign = substr($username, 0, 1);
                 </div>
                 <?php display_notification(); ?>
 
-                <form action="./adding" method="post" class="d-flex flex-column justify-content-center gap-4">
+                <form action="./adding" method="post" class="d-flex flex-column justify-content-center gap-2">
                     <?php set_csrf() ?>
-                    <label for="title">Title</label>
+                    <label for="title">
+                        <h4>Title</h4>
+                    </label>
                     <input type="text" name="title" id="title">
-                    <label for="slug">Slug (without / )</label>
+                    <label for="slug">
+                        <h4>Slug (without / )</h4>
+                    </label>
                     <input type="text" name="slug" id="slug">
-                    <label for="exceprt">Excerpt</label>
+                    <label for="exceprt">
+                        <h4>Excerpt</h4>
+                    </label>
                     <textarea name="excerpt" id="excerpt" cols="60" rows="10">Excerpt</textarea>
-                    <label for="content">Content</label>
+                    <label for="content">
+                        <h4>Content</h4>
+                    </label>
                     <textarea name="content" id="content" cols="60" rows="10">Content</textarea>
                     <input type="submit" value="Create" class="btn btn-primary py-3 px-5 w-25">
                 </form>

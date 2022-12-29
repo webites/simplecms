@@ -44,7 +44,7 @@ $page = $pages->getPageById($id);
                 </div>
                 <?php display_notification(); ?>
 
-                <form action="../editing" method="post" class="d-flex flex-column justify-content-center gap-4">
+                <form action="../editing" method="post" class="d-flex flex-column justify-content-center gap-2">
                     <?php set_csrf() ?>
                     <input type="hidden" name="id" value="<?php echo $page['id'] ?>">
                     <label for="title">
