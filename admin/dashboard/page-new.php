@@ -59,11 +59,28 @@ $sign = substr($username, 0, 1);
     </div>
 
     <script>
+        import SimpleUploadAdapter from '@ckeditor/ckeditor5-upload/src/adapters/simpleuploadadapter';
+
         ClassicEditor
-            .create(document.querySelector('#content'))
-            .catch(error => {
-                console.error(error);
-            });
+            .create(document.querySelector('#content'), {
+                plugins: [SimpleUploadAdapter, ...],
+                toolbar: [...],
+                simpleUpload: {
+                    // The URL that the images are uploaded to.
+                    uploadUrl: <?php echo SITE_URL ?>,
+
+                    // Enable the XMLHttpRequest.withCredentials property.
+                    withCredentials: true,
+
+                    // Headers sent along with the XMLHttpRequest to the upload server.
+                    headers: {
+                        'X-CSRF-TOKEN': 'CSRF-Token',
+                        Authorization: 'Bearer <JSON Web Token>'
+                    }
+                }
+            })
+            .then(...)
+            .catch(...);
     </script>
 </body>
 
