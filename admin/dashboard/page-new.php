@@ -78,7 +78,9 @@ $sign = substr($username, 0, 1);
                     }
                 }
             })
-        // .then(...)
+            .then(editor => {
+                window.editor = editor;
+            })
         // .catch(...);
     </script>
 </body>
