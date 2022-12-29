@@ -27,10 +27,6 @@ function wyswig_loader()
     <script>
         var editor = new FroalaEditor('#content', {
             language: 'pl',
-            fileUploadURL: '/images',
-            fileUseSelectedText: true,
-            imageManagerLoadURL: '/images',
-            imageUploadRemoteUrls: false,
             toolbarButtons: {
                 'moreText': {
                     'buttons': ['bold', 'italic', 'underline', 'strikeThrough', 'subscript', 'superscript', 'fontFamily', 'fontSize', 'textColor', 'backgroundColor', 'inlineClass', 'inlineStyle', 'clearFormatting']
