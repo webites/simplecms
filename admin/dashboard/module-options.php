@@ -44,11 +44,13 @@ $sign = substr($username, 0, 1);
             <div class="dashboard__info">
                 <div class="dashboard__info__title">
                     <i class="bi bi-grid-3x3-gap"></i>
-                    <h2>Module - <?php echo $module->label ?></h2>
+                    <h2>Module - <u><?php echo $module->label ?></u></h2>
                 </div>
                 <?php display_notification(); ?>
 
-
+                <h2><?php echo $module->label ?></h2>
+                <p><?php echo $module->description ?></p>
+                <a href="<?php echo $module->callback ?>" target="_blank" class="btn btn-primary"><?php echo $module->text ?></a>
 
             </div>
 
