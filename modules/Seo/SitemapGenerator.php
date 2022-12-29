@@ -38,6 +38,6 @@ class SitemapGenerator
 
         $return .= $robots_response;
 
-        return $return;
+        return array($return);
     }
 }
