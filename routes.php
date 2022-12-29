@@ -9,7 +9,7 @@ use Simple\Core\Database;
 use Simple\Core\DeletePage;
 use Simple\Core\EditPage;
 use Simple\Core\Notification\Alert;
-use Simple\Module\SitemapGenerator;
+use Simple\Modules\SitemapGenerator;
 
 require_once __DIR__ . '/router.php';
 
