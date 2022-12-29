@@ -35,9 +35,9 @@ class EditPage
                 // }
 
                 if ($row['slug'] == $this->slug) {
-                    if ($row['id'] != $this->id) {
-                        $slug_exist = true;
-                    }
+                    // if ($row['id'] != $this->id) {
+                    $slug_exist = true;
+                    // }
                 }
             }
             $dbh = null;
