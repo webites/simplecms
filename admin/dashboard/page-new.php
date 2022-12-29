@@ -63,7 +63,8 @@ $sign = substr($username, 0, 1);
         var editor = new FroalaEditor('#content', {
             fileUploadURL: '<?php echo SITE_URL ?>/images',
             fileUseSelectedText: true,
-            imageManagerLoadURL: '<?php echo SITE_URL ?>/images'
+            imageManagerLoadURL: '<?php echo SITE_URL ?>/images',
+            imageUploadRemoteUrls: false
         });
     </script>
 </body>
