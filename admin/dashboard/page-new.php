@@ -41,6 +41,7 @@ $sign = substr($username, 0, 1);
                     <i class="bi bi-journal"></i>
                     <h2>New Page</h2>
                 </div>
+                <?php display_notification(); ?>
 
                 <form action="./adding" method="post" class="d-flex flex-column justify-content-center gap-4">
                     <?php set_csrf() ?>

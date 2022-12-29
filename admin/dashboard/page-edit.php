@@ -42,6 +42,7 @@ $page = $pages->getPageById($id);
                     <i class="bi bi-journal"></i>
                     <h2>Edit Page: <strong> <?php echo $page['title'] ?> (ID: <?php echo $page['id'] ?>)</strong></h2>
                 </div>
+                <?php display_notification(); ?>
 
                 <form action="../editing" method="post" class="d-flex flex-column justify-content-center gap-4">
                     <?php set_csrf() ?>
