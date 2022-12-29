@@ -178,6 +178,17 @@ get('/admin/global', function () {
     }
 });
 
+// Admin Modules
+
+get('/admin/modules', function () {
+    $auth = Database::connect();
+    if ($auth->isLoggedIn()) {
+        require_once('admin/dashboard/modules.php');
+    } else {
+        header('Location: /login');
+    }
+});
+
 
 // Generate from pages
 $pages = new Pages();
@@ -195,32 +206,7 @@ foreach ($all_pages as $page) {
 // Generate sitemap
 
 get('/generate-sitemap', function () {
-    /*    $content = '<?xml version="1.0" encoding="UTF-8"?>
-    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">';
-    $pages = new Pages();
-    $all_pages = $pages->getAll();
-    foreach ($all_pages as $page) {
-        $content .= '<url>
-        <loc>' . SITE_URL . '/' . $page['slug'] . '</loc>
-      </url>';
-    }
-    $content .= '</urlset>';
-    $file = 'sitemap.xml';
-    $handle = fopen($file, "w");
-    $response = fwrite($handle, $content);
-    fclose($handle);
-    // $response = file_put_contents($file, $content, FILE_USE_INCLUDE_PATH);
-    var_dump($response);
-
-    $robots = 'Sitemap: ' . SITE_URL . '/' . $file;
-    $robots_handle = fopen('robots.txt', "w");
-    $robots_response = fwrite($robots_handle, $robots);
-    fclose($robots_handle);
-
-    var_dump($robots_response); */
-
-    $sitemap = new SitemapGenerator();
-    var_dump($sitemap);
+    new SitemapGenerator();
 });
 
 // For GET or POST

@@ -9,6 +9,9 @@
         <a href="#"><i class="bi bi-justify"></i>Menu</a>
     </li>
     <li>
+        <a href="/admin/modules"><i class="bi bi-justify"></i>Modules</a>
+    </li>
+    <li>
         <a href="/admin/global"><i class="bi bi-globe"></i>Global</a>
     </li>
     <li>

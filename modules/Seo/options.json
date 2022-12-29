@@ -1,0 +1,8 @@
+{
+  "label": "Sitemap Generator",
+  "description": "One click to generate you own sitemap.xml for Google",
+  "button": {
+    "text": "Generuj",
+    "callback": "/generate-sitemap"
+  }
+}
