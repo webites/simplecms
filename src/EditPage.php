@@ -30,7 +30,7 @@ class EditPage
             $slug_exist = false;
             foreach ($record as $row) {
 
-                if ($row['slug'] == $this->slug && $row['id'] == $this->id) {
+                if ($row['slug'] == $this->slug && $row['id'] != $this->id) {
                     $slug_exist = true;
                 }
             }
