@@ -17,7 +17,7 @@ class EditPage
     {
 
         $this->title = htmlspecialchars($title, ENT_QUOTES);
-        $this->slug =  htmlspecialchars($slug, ENT_QUOTES);
+        $this->slug =  slug_creator(htmlspecialchars($slug, ENT_QUOTES));
         $this->excerpt =  htmlspecialchars($excerpt, ENT_QUOTES);
         $this->content = $content;
         $this->id = $id;
@@ -35,9 +35,9 @@ class EditPage
                 // }
 
                 if ($row['slug'] == $this->slug) {
-                    // if ($row['id'] != $this->id) {
-                    $slug_exist = true;
-                    // }
+                    if ($row['id'] != $this->id) {
+                        $slug_exist = true;
+                    }
                 }
             }
             $dbh = null;
