@@ -25,7 +25,7 @@ class EditPage
         try {
             $dbh = new PDO("mysql:host=" . DB_HOST . ";dbname=" . DB_DATABASE . ";charset=utf8", DB_USER, DB_PASSWORD);
 
-            $data = $dbh->query('SELECT slug FROM pages_active');
+            $data = $dbh->query('SELECT slug, id FROM pages_active');
             $record = $data->fetchAll();
             $slug_exist = false;
             foreach ($record as $row) {
