@@ -81,6 +81,7 @@ $sign = substr($username, 0, 1);
                 }
             },
             imageInsertButtons: ['imageBack', '|', 'imageByURL'],
+            videoInsertButtons: ['videoBack', '|', 'videoByURL', 'videoEmbed'],
             fontFamilySelection: true,
             fontSizeSelection: true,
             paragraphFormatSelection: true
