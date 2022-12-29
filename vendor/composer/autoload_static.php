@@ -19,6 +19,7 @@ class ComposerStaticInit674be5e104d6f55d25ba3e4b9f199723
         ),
         'S' => 
         array (
+            'Simple\\Modules\\' => 15,
             'Simple\\Core\\' => 12,
         ),
         'D' => 
@@ -35,6 +36,10 @@ class ComposerStaticInit674be5e104d6f55d25ba3e4b9f199723
         'voku\\helper\\' => 
         array (
             0 => __DIR__ . '/..' . '/voku/php-hooks/src/voku/helper',
+        ),
+        'Simple\\Modules\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/modules',
         ),
         'Simple\\Core\\' => 
         array (

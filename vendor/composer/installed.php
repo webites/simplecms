@@ -3,7 +3,7 @@
         'name' => 'lukaszgolabek/simplecms',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => 'a7143c9f00a8eabc57dc38741e571b1cf28a0847',
+        'reference' => '1266024a33cca598828aff158305afe4d8500930',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -71,7 +71,7 @@
         'lukaszgolabek/simplecms' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => 'a7143c9f00a8eabc57dc38741e571b1cf28a0847',
+            'reference' => '1266024a33cca598828aff158305afe4d8500930',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

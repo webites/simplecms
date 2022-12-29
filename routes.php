@@ -9,6 +9,7 @@ use Simple\Core\Database;
 use Simple\Core\DeletePage;
 use Simple\Core\EditPage;
 use Simple\Core\Notification\Alert;
+use Simple\Module\SitemapGenerator;
 
 require_once __DIR__ . '/router.php';
 
@@ -194,7 +195,7 @@ foreach ($all_pages as $page) {
 // Generate sitemap
 
 get('/generate-sitemap', function () {
-    $content = '<?xml version="1.0" encoding="UTF-8"?>
+    /*    $content = '<?xml version="1.0" encoding="UTF-8"?>
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">';
     $pages = new Pages();
     $all_pages = $pages->getAll();
@@ -216,7 +217,9 @@ get('/generate-sitemap', function () {
     $robots_response = fwrite($robots_handle, $robots);
     fclose($robots_handle);
 
-    var_dump($robots_response);
+    var_dump($robots_response); */
+
+    new SitemapGenerator();
 });
 
 // For GET or POST

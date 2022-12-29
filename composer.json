@@ -4,7 +4,8 @@
   "type": "project",
   "autoload": {
     "psr-4": {
-      "Simple\\Core\\": "src/"
+      "Simple\\Core\\": "src/",
+      "Simple\\Modules\\": "modules/"
     },
     "files": [
       "config.php",

@@ -7,6 +7,7 @@ $baseDir = dirname($vendorDir);
 
 return array(
     'voku\\helper\\' => array($vendorDir . '/voku/php-hooks/src/voku/helper'),
+    'Simple\\Modules\\' => array($baseDir . '/modules'),
     'Simple\\Core\\' => array($baseDir . '/src'),
     'Delight\\Http\\' => array($vendorDir . '/delight-im/http/src'),
     'Delight\\Db\\' => array($vendorDir . '/delight-im/db/src'),
