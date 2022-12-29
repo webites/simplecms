@@ -65,59 +65,7 @@ $sign = substr($username, 0, 1);
             fileUseSelectedText: true,
             imageManagerLoadURL: '/images',
             imageUploadRemoteUrls: false,
-
-            events: {
-                'image.beforeUpload': function(images) {
-                    // Return false if you want to stop the image upload.
-                },
-                'image.uploaded': function(response) {
-                    // Image was uploaded to the server.
-                },
-                'image.inserted': function($img, response) {
-                    // Image was inserted in the editor.
-                },
-                'image.replaced': function($img, response) {
-                    // Image was replaced in the editor.
-                },
-                'image.error': function(error, response) {
-                    // Bad link.
-                    if (error.code == 1) {
-                        console.log(error, response);
-                    }
-
-                    // No link in upload response.
-                    else if (error.code == 2) {
-                        console.log(error, response);
-                    }
-
-                    // Error during image upload.
-                    else if (error.code == 3) {
-                        console.log(error, response);
-                    }
-
-                    // Parsing response failed.
-                    else if (error.code == 4) {
-                        console.log(error, response);
-                    }
-
-                    // Image too text-large.
-                    else if (error.code == 5) {
-                        console.log(error, response);
-                    }
-
-                    // Invalid image type.
-                    else if (error.code == 6) {
-                        console.log(error, response);
-                    }
-
-                    // Image can be uploaded only to same domain in IE 8 and IE 9.
-                    else if (error.code == 7) {
-                        console.log(error, response);
-                    }
-
-                    // Response contains the original server response to the request if available.
-                }
-            }
+            toolbarButtons: ['fontFamily', '|', 'fontSize', '|', 'paragraphFormat', '|', 'bold', 'italic', 'underline', 'undo', 'redo', 'codeView'],
         });
     </script>
 </body>
