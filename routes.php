@@ -149,9 +149,9 @@ post('/admin/pages/editing', function () {
         // echo $edited_page->getContent();
 
         if ($edited_page->updated == false) {
-            $alert = new Alert('/admin/pages', 'Coś poszło nie tak. Prawdopodobnie slug juz istnieje', 'fail');
+            $alert = new Alert('admin/pages/edit/' . $_POST['id'], 'Coś poszło nie tak. Prawdopodobnie slug juz istnieje', 'fail');
         } else {
-            $alert = new Alert('/admin/pages', 'Pomyślnie edytowano stronę <strong>' . $edited_page->title . '<strong>');
+            $alert = new Alert('admin/pages/edit/' . $_POST['id'], 'Pomyślnie edytowano stronę <strong>' . $edited_page->title . '<strong>');
         }
     }
 });
