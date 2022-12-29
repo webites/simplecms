@@ -2,7 +2,7 @@ RewriteCond %{REQUEST_FILENAME} !-f
 
 RewriteEngine On
 RewriteCond %{REQUEST_URI} !(\.png|\.jpg|\.webp|\.gif|\.jpeg|\.zip|\.svg|\.js)$
-RewriteRule (.\*) routes.php [QSA,L]
+RewriteRule (.*) routes.php [QSA,L]
 
 # php -- BEGIN cPanel-generated handler, do not edit
 
