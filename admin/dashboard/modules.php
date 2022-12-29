@@ -50,7 +50,8 @@ $sign = substr($username, 0, 1);
                 <?php
                 $modules = Manager::getModules();
                 foreach ($modules as $module) {
-                    echo "<a href='/admin/modules/" . $module . "' class=''><h3>" . $module . "</h3></a>";
+                    $options = Manager::moduleOptions($module);
+                    echo "<a href='/admin/modules/" . $module . "' class=''>" . $options->icon . "<h3>" . $module . "</h3></a>";
                 }
                 ?>
 

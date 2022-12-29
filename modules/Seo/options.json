@@ -1,6 +1,7 @@
 {
   "label": "Sitemap Generator",
   "description": "One click to generate you own sitemap.xml for Google",
+  "icon": "<i class='bi bi-search-heart'></i>",
   "button": {
     "text": "Generuj",
     "callback": "/generate-sitemap"
