@@ -21,7 +21,7 @@ class Manager
 
     static function moduleOptions($name)
     {
-        $options = file_get_contents('./modules/' . $name);
+        $options = file_get_contents('./modules/' . $name . '/options.json');
         var_dump($options);
     }
 }
