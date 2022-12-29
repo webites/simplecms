@@ -63,8 +63,8 @@ $sign = substr($username, 0, 1);
 
         ClassicEditor
             .create(document.querySelector('#content'), {
-                plugins: [SimpleUploadAdapter, ...],
-                toolbar: [...],
+                plugins: [SimpleUploadAdapter],
+                toolbar: [],
                 simpleUpload: {
                     // The URL that the images are uploaded to.
                     uploadUrl: <?php echo SITE_URL ?>,
