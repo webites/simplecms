@@ -12,8 +12,7 @@ class Manager
         $modules = scandir('./modules');
         $current_modules = [];
         foreach ($modules as $module) {
-            if (!str_contains($module, ".") || !str_contains($module, '..')) {
-                // $current_modules .= $module;
+            if (strpos($module, ".") === false || strpos($module, '..') === false) {
                 array_push($current_modules, $module);
             }
         }
