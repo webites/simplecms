@@ -16,6 +16,8 @@ $sign = substr($username, 0, 1);
     <link rel="stylesheet" href="<?php echo SITE_URL ?>/admin/assets/css/style.css" />
     <link rel="stylesheet" href="<?php echo SITE_URL ?>/admin/assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="<?php echo SITE_URL ?>/admin/assets/node_modules/bootstrap-icons/font/bootstrap-icons.css" />
+
+    <script src="https://cdn.ckeditor.com/ckeditor5/35.4.0/classic/ckeditor.js"></script>
 </head>
 
 <body>
@@ -55,6 +57,14 @@ $sign = substr($username, 0, 1);
             </div>
         </div>
     </div>
+
+    <script>
+        ClassicEditor
+            .create(document.querySelector('#content'))
+            .catch(error => {
+                console.error(error);
+            });
+    </script>
 </body>
 
 </html>
