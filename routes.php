@@ -191,6 +191,12 @@ foreach ($all_pages as $page) {
     });
 }
 
+// Generat sitemap
+
+get('/generatesitemap', function () {
+    require_once('src/SitemapGen/PHP-XML-Sitemap-Generator/sitemap-generator.php');
+});
+
 // For GET or POST
 // The 404.php which is inside the views folder will be called
 // The 404.php has access to $_GET and $_POST
