@@ -9,7 +9,7 @@ class Manager
 
     static function getModules()
     {
-        $modules = scandir('/modules');
+        $modules = scandir('./modules');
         var_dump($modules);
     }
 }
