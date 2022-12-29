@@ -59,6 +59,8 @@ $page = $pages->getPageById($id);
             </div>
         </div>
     </div>
+    <?php wyswig_loader(); ?>
+
 </body>
 
 </html>
