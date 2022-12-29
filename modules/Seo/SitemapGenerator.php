@@ -9,6 +9,7 @@ class SitemapGenerator
 
     public function __construct()
     {
+        $return = [];
         $content = '<?xml version="1.0" encoding="UTF-8"?>
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">';
 
@@ -26,11 +27,17 @@ class SitemapGenerator
         $response = fwrite($handle, $content);
         fclose($handle);
 
+        $return .= $response;
+
 
 
         $robots = 'Sitemap: ' . SITE_URL . '/' . $file;
         $robots_handle = fopen('robots.txt', "w");
         $robots_response = fwrite($robots_handle, $robots);
         fclose($robots_handle);
+
+        $return .= $robots_response;
+
+        return $return;
     }
 }
