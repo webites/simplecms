@@ -232,7 +232,7 @@
 .dashboard__notification__close i {
   color: rgba(36, 122, 253, 0.8);
 }
-.dashboard__modules__title {
+.dashboard__module__title {
   display: flex;
   gap: 1rem;
   color: #247afd;
