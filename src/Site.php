@@ -37,7 +37,7 @@ class Site
 
             foreach ($records as $key => $value) {
 
-                $this->$value = $key;
+                $this->$value[0] = $key[0];
                 echo "<pre>";
                 var_dump($key, $value);
                 echo "</pre>";
