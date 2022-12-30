@@ -10,6 +10,8 @@ class Site
 
     public $logo;
     public $site_name;
+    public $site_country;
+    public $site_lang;
 
     public function __construct()
     {
