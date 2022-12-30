@@ -214,17 +214,17 @@ get('/admin/modules/$name', function ($name) {
 
 
 // Generate from pages
-$pages = new Pages();
-$all_pages = $pages->getAll();
+// $pages = new Pages();
+// $all_pages = $pages->getAll();
 
-foreach ($all_pages as $page) {
-    $_SESSION['page_id'] = $page['id'];
-    get('/' . $page['slug'], function () {
-        $view = new View($_SESSION['page_id']);
-        $view->renderView();
-        unset($_SESSION['page_id']);
-    });
-}
+// foreach ($all_pages as $page) {
+//     $_SESSION['page_id'] = $page['id'];
+//     get('/' . $page['slug'], function () {
+//         $view = new View($_SESSION['page_id']);
+//         $view->renderView();
+//         unset($_SESSION['page_id']);
+//     });
+// }
 
 // Generate sitemap
 
