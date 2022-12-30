@@ -17,6 +17,7 @@ require_once __DIR__ . '/router.php';
 
 // Admin Basic
 
+get('/', '/home');
 
 get('/admin', function () {
     $auth = Database::connect();
