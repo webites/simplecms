@@ -1,4 +1,7 @@
 <?php
+
+use voku\helper\Hooks;
+
 session_start();
 
 function display_notification()
@@ -48,4 +51,11 @@ function wyswig_loader()
             paragraphFormatSelection: true
         });
     </script>";
+}
+
+
+function simple_head()
+{
+    $hooks = Hooks::getInstance();
+    $hooks->do_action('head_section');
 }
