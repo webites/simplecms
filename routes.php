@@ -181,6 +181,11 @@ get('/admin/global', function () {
 
 post('/admin/global/update', function () {
     $response = Site::updateGlobal($_POST);
+    if ($response == true) {
+        new Alert('/admin/global', 'Ustawienia zapisane prawidłowo');
+    } else {
+        new Alert('/admin/global', 'Coś poszło nie tak. Spróbuj ponownie', 'fail');
+    }
 });
 
 // Admin Modules
