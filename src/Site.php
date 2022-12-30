@@ -58,8 +58,8 @@ class Site
     static function updateGlobal($settings)
     {
         $dbh = new PDO("mysql:host=" . DB_HOST . ";dbname=" . DB_DATABASE . ";charset=utf8", DB_USER, DB_PASSWORD);
-        foreach ($settings as $setting) {
-            var_dump($setting);
+        foreach ($settings as $setting => $key) {
+            var_dump($key, $setting);
         }
 
         // $sql = "UPDATE `site_settings` SET title=?, slug=?, excerpt=?, content=? WHERE id=" . $this->id;
