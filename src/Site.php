@@ -37,7 +37,7 @@ class Site
 
             foreach ($records as $record) {
 
-                $this->$$record['name'] = $record['value'];
+                $this->${$record['name']} = $record['value'];
                 echo "<pre>";
                 var_dump($record['name'], $record['value']);
                 echo "</pre>";
