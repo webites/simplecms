@@ -12,14 +12,16 @@
     .view {
         width: 100vw;
         height: 100vh;
-        background-color: rgba(lightgray, 0.4);
+        background-color: rgba(lightgray, 0.6);
     }
 
     .warning-404 {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: 3rem;
+        height: 100%;
     }
 </style>
 
