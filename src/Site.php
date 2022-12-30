@@ -59,12 +59,10 @@ class Site
     {
         $dbh = new PDO("mysql:host=" . DB_HOST . ";dbname=" . DB_DATABASE . ";charset=utf8", DB_USER, DB_PASSWORD);
         foreach ($settings as $setting => $value) {
-            $dbh = new PDO("mysql:host=" . DB_HOST . ";dbname=" . DB_DATABASE . ";charset=utf8", DB_USER, DB_PASSWORD);
-
             var_dump($setting, $value);
             $sql = "UPDATE site_settings SET value=? WHERE name='" . $setting . "'";
             $stmt = $dbh->prepare($sql);
-            $response = $stmt->execute($value);
+            $response = $stmt->execute([$value]);
         }
         $dbh = null;
 
