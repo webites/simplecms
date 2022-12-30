@@ -32,7 +32,7 @@
             <p class="lead">
                 Please go to main page or write url correctly.
             </p>
-            <a href="<?php SITE_URL ?>" class="btn btn-primary">Go to main</a>
+            <a href="/" class="btn btn-primary">Go to main</a>
         </div>
     </div>
 
