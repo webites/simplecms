@@ -38,7 +38,9 @@ class Site
             foreach ($records as $key => $value) {
 
                 $this->$value = $key;
+                echo "<pre>";
                 var_dump($key, $value);
+                echo "</pre>";
             }
 
             $dbh = null;
