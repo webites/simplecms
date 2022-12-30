@@ -47,13 +47,15 @@ $sign = substr($username, 0, 1);
                 </div>
                 <?php display_notification(); ?>
 
-                <?php
-                $modules = Manager::getModules();
-                foreach ($modules as $module) {
-                    $options = Manager::moduleOptions($module);
-                    echo "<a href='/admin/modules/" . $module . "' class='dashboard__module__title'>" . $options->icon . "<h3>" . $options->label . "</h3></a>";
-                }
-                ?>
+                <div class="dashboard__module">
+                    <?php
+                    $modules = Manager::getModules();
+                    foreach ($modules as $module) {
+                        $options = Manager::moduleOptions($module);
+                        echo "<a href='/admin/modules/" . $module . "' class='dashboard__module__title'>" . $options->icon . "<h3>" . $options->label . "</h3></a>";
+                    }
+                    ?>
+                </div>
 
             </div>
 

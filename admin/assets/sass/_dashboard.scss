@@ -236,6 +236,10 @@
   }
 
   &__module {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
     &__title {
       display: flex;
       align-items: center;
