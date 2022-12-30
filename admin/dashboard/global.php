@@ -58,7 +58,7 @@ $sign = substr($username, 0, 1);
                     <div class="col-8">
                         <div data-bs-spy="scroll" data-bs-target="#simple-list-example" data-bs-offset="0" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
 
-                            <form action="<?php SITE_URL ?>/admin/global-update" method="POST" class="dashboard__global__form">
+                            <form action="<?php SITE_URL ?>/admin/global/update" method="POST" class="dashboard__global__form">
                                 <h4 id="simple-list-item-1">Basic site info</h4>
                                 <div class="dashboard__global__form__section">
                                     <?php
