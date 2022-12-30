@@ -37,7 +37,7 @@ class Site
 
             foreach ($records as $key => $value) {
 
-                $this->$key = $value;
+                $this->$value = $key;
             }
 
             $dbh = null;
