@@ -39,7 +39,7 @@ class Site
 
                 $this->$value[0] = $key[0];
                 echo "<pre>";
-                var_dump($key, $value);
+                var_dump($value[0], $key[0]);
                 echo "</pre>";
             }
 
