@@ -12,6 +12,7 @@ class Site
     public $site_name;
     public $site_country;
     public $site_lang;
+    public $site_author;
 
     public function __construct()
     {
@@ -32,6 +33,9 @@ class Site
                 }
                 if ($record['name'] == 'site_lang') {
                     $this->site_lang = $record['value'];
+                }
+                if ($record['name'] == 'site_author') {
+                    $this->site_author = $record['value'];
                 }
             }
 
