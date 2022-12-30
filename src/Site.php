@@ -35,11 +35,11 @@ class Site
             //     }
             // }
 
-            foreach ($records as $key => $value) {
+            foreach ($records as $record) {
 
-                $this->$value[0] = $value[1];
+                $this->$record['name'] = $record['value';
                 echo "<pre>";
-                var_dump($value[0], $value[1]);
+                var_dump($record['name'], $record['value']);
                 echo "</pre>";
             }
 
