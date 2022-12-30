@@ -27,6 +27,12 @@ class Site
                 if ($record['name'] == 'site_name') {
                     $this->site_name = $record['value'];
                 }
+                if ($record['name'] == 'site_country') {
+                    $this->site_country = $record['value'];
+                }
+                if ($record['name'] == 'site_lang') {
+                    $this->site_lang = $record['value'];
+                }
             }
 
             $dbh = null;
