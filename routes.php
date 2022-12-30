@@ -17,6 +17,10 @@ require_once __DIR__ . '/router.php';
 
 // Admin Basic
 
+get('/', function () {
+    echo 'test';
+});
+
 get('/admin', function () {
     $auth = Database::connect();
     if ($auth->isLoggedIn()) {
