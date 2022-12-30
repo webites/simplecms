@@ -48,19 +48,19 @@ $sign = substr($username, 0, 1);
                     <label for="title">
                         <h4>Title</h4>
                     </label>
-                    <input type="text" name="title" id="title">
+                    <input type="text" name="title" id="title" class="form-control">
                     <label for="slug">
                         <h4>Slug (without / )</h4>
                     </label>
-                    <input type="text" name="slug" id="slug">
+                    <input type="text" name="slug" id="slug" class="form-control">
                     <label for="exceprt">
                         <h4>Excerpt</h4>
                     </label>
-                    <textarea name="excerpt" id="excerpt" cols="60" rows="10">Excerpt</textarea>
+                    <textarea name="excerpt" id="excerpt" cols="60" rows="10" class="form-control">Excerpt</textarea>
                     <label for="content">
                         <h4>Content</h4>
                     </label>
-                    <textarea name="content" id="content" cols="60" rows="10">Content</textarea>
+                    <textarea name="content" id="content" cols="60" rows="10" class="form-control">Content</textarea>
                     <input type="submit" value="Create" class="btn btn-primary py-3 px-5 w-25">
                 </form>
             </div>

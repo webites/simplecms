@@ -66,7 +66,7 @@ $sign = substr($username, 0, 1);
                                         $label = str_replace("_", " ", $item);
                                     ?>
                                         <label for="<?php echo $item ?>"><?php echo $label ?></label>
-                                        <input type="text" id="<?php echo $item ?>" name="<?php echo $item ?>" value="<?php echo $value ?>">
+                                        <input type="text" id="<?php echo $item ?>" name="<?php echo $item ?>" value="<?php echo $value ?>" class="form-control">
                                     <?php } ?>
 
                                 </div>

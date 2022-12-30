@@ -50,19 +50,19 @@ $page = $pages->getPageById($id);
                     <label for="title">
                         <h4>Title</h4>
                     </label>
-                    <input type="text" name="title" id="title" value="<?php echo $page['title'] ?>">
+                    <input type="text" name="title" id="title" value="<?php echo $page['title'] ?>" class="form-control">
                     <label for="slug">
                         <h4>Slug (without / )</h4>
                     </label>
-                    <input type="text" name="slug" id="slug" value="<?php echo $page['slug'] ?>">
+                    <input type="text" name="slug" id="slug" value="<?php echo $page['slug'] ?>" class="form-control">
                     <label for="exceprt">
                         <h4>Excerpt</h4>
                     </label>
-                    <textarea name="excerpt" id="excerpt" cols="60" rows="10"><?php echo $page['excerpt'] ?></textarea>
+                    <textarea name="excerpt" id="excerpt" cols="60" rows="10" class="form-control"><?php echo $page['excerpt'] ?></textarea>
                     <label for="content">
                         <h4>Content</h4>
                     </label>
-                    <textarea name="content" id="content" cols="60" rows="10"><?php echo $page['content'] ?></textarea>
+                    <textarea name="content" id="content" cols="60" rows="10" class="form-control"><?php echo $page['content'] ?></textarea>
                     <input type="submit" value="Update" class="btn btn-primary py-3 px-5 w-25">
                 </form>
             </div>
