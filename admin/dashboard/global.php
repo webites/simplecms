@@ -79,6 +79,7 @@ $sign = substr($username, 0, 1);
                                 <p>...</p>
                                 <h4 id="simple-list-item-5">Item 5</h4>
                                 <p>...</p>
+                                <input type="submit" class="mt-4 btn btn-primary" value="Zaktualizuj">
                             </form>
                         </div>
                     </div>
