@@ -58,16 +58,15 @@ class Site
     static function updateGlobal($settings)
     {
         $dbh = new PDO("mysql:host=" . DB_HOST . ";dbname=" . DB_DATABASE . ";charset=utf8", DB_USER, DB_PASSWORD);
-        foreach ($settings as $setting => $key) {
-            var_dump($key, $setting);
+        foreach ($settings as $setting => $value) {
+
+            $sql = "UPDATE `site_settings` SET value=? WHERE name=" . $setting;
+            $stmt = $dbh->prepare($sql);
+            $response = $stmt->execute($value);
         }
+        $dbh = null;
 
-        // $sql = "UPDATE `site_settings` SET title=?, slug=?, excerpt=?, content=? WHERE id=" . $this->id;
-        // $stmt = $dbh->prepare($sql);
-        // $response = $stmt->execute([$this->title, $this->slug, $this->excerpt, $this->content]);
-        // $dbh = null;
-
-        // $this->updated = true;
-        // return true;
+        return true;
+        echo "ok";
     }
 }
