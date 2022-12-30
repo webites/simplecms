@@ -12,7 +12,7 @@ function echo_this_in_header()
     echo $page['title'];
 }
 
-$hooks->add_action('head_section', 'make_alert');
+//$hooks->add_action('head_section', 'make_alert');
 
 function make_alert()
 {
