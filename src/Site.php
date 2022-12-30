@@ -54,4 +54,20 @@ class Site
         }
         return $return;
     }
+
+    static function updateGlobal($settings)
+    {
+        $dbh = new PDO("mysql:host=" . DB_HOST . ";dbname=" . DB_DATABASE . ";charset=utf8", DB_USER, DB_PASSWORD);
+        foreach ($settings as $setting) {
+            var_dump($setting);
+        }
+
+        // $sql = "UPDATE `site_settings` SET title=?, slug=?, excerpt=?, content=? WHERE id=" . $this->id;
+        // $stmt = $dbh->prepare($sql);
+        // $response = $stmt->execute([$this->title, $this->slug, $this->excerpt, $this->content]);
+        // $dbh = null;
+
+        // $this->updated = true;
+        // return true;
+    }
 }

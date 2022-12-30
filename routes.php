@@ -1,13 +1,14 @@
 <?php require __DIR__ . '/vendor/autoload.php';
 session_start();
 
+use Simple\Core\Site;
 use Simple\Core\View;
 use Simple\Core\Pages;
 use voku\helper\Hooks;
 use Simple\Core\AddPage;
 use Simple\Core\Database;
-use Simple\Core\DeletePage;
 use Simple\Core\EditPage;
+use Simple\Core\DeletePage;
 use Simple\Core\Notification\Alert;
 use Simple\Modules\Seo\SitemapGenerator;
 
@@ -176,6 +177,10 @@ get('/admin/global', function () {
     } else {
         header('Location: /login');
     }
+});
+
+post('/admin/global/update', function () {
+    $response = Site::updateGlobal($_POST);
 });
 
 // Admin Modules
