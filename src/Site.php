@@ -20,19 +20,24 @@ class Site
 
             $data = $dbh->query('SELECT name, value FROM site_settings');
             $records = $data->fetchAll();
-            foreach ($records as $record) {
-                if ($record['name'] == 'logo') {
-                    $this->logo = $record['value'];
-                }
-                if ($record['name'] == 'site_name') {
-                    $this->site_name = $record['value'];
-                }
-                if ($record['name'] == 'site_country') {
-                    $this->site_country = $record['value'];
-                }
-                if ($record['name'] == 'site_lang') {
-                    $this->site_lang = $record['value'];
-                }
+            // foreach ($records as $record) {
+            //     if ($record['name'] == 'logo') {
+            //         $this->logo = $record['value'];
+            //     }
+            //     if ($record['name'] == 'site_name') {
+            //         $this->site_name = $record['value'];
+            //     }
+            //     if ($record['name'] == 'site_country') {
+            //         $this->site_country = $record['value'];
+            //     }
+            //     if ($record['name'] == 'site_lang') {
+            //         $this->site_lang = $record['value'];
+            //     }
+            // }
+
+            foreach ($records as $key => $value) {
+
+                $this->$key = $value;
             }
 
             $dbh = null;
