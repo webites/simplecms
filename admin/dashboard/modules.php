@@ -42,7 +42,7 @@ $sign = substr($username, 0, 1);
             </div>
             <div class="dashboard__info">
                 <div class="dashboard__info__title">
-                    <i class="bi bi-grid-3x3-gap"></i>
+                    <i class="bi bi-plugin"></i>
                     <h2>Modules</h2>
                 </div>
                 <?php display_notification(); ?>
