@@ -23,6 +23,10 @@
         gap: 3rem;
         height: 100%;
     }
+
+    h1.display-1 {
+        font-size: 12rem;
+    }
 </style>
 
 <body>
